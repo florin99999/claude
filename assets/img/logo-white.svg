@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380" role="img" aria-label="Aerconduct – Conducte de ventilație">
+  <defs>
+    <marker id="hr" viewBox="0 0 20 20" refX="10" refY="10" markerWidth="62" markerHeight="62" markerUnits="userSpaceOnUse" orient="auto"><path d="M1 1 L19 10 L1 19 z" fill="#E02127"/></marker>
+    <marker id="hb" viewBox="0 0 20 20" refX="10" refY="10" markerWidth="62" markerHeight="62" markerUnits="userSpaceOnUse" orient="auto"><path d="M1 1 L19 10 L1 19 z" fill="#3EA8DE"/></marker>
+  </defs>
+  <path d="M34.7 143.6 A300 150 0 0 1 617.1 210.9" fill="none" stroke="#E02127" stroke-width="24" stroke-linecap="round" marker-end="url(#hr)"/>
+  <path d="M605.3 236.4 A300 150 0 0 1 22.9 210.9" fill="none" stroke="#3EA8DE" stroke-width="24" stroke-linecap="round" marker-end="url(#hb)"/>
+  <text x="320" y="206" text-anchor="middle" font-family="Kanit, 'Arial Narrow', Arial, sans-serif" font-weight="800" font-size="74" fill="#FFFFFF" letter-spacing="-1">AERCONDUCT</text>
+  <text x="320" y="244" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-style="italic" font-weight="500" font-size="19" fill="#3EA8DE" letter-spacing="3.5">CONDUCTE DE VENTILAȚIE</text>
+</svg>
