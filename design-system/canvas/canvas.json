@@ -1,10 +1,13 @@
 {
   "artboards": [
-    { "file": "Main.dc.html", "title": "01 Fundamente", "x": 0, "y": 0, "w": 1440, "h": 5600 },
-    { "file": "Componente.dc.html", "title": "02 Componente", "x": 1560, "y": 0, "w": 1440, "h": 6650 }
+    { "file": "Main.dc.html",       "title": "Homepage · Desktop 1440", "x": 0,    "y": 0, "w": 1440, "h": 900 },
+    { "file": "Mobil.dc.html",      "title": "Homepage · Mobil 390",    "x": 1560, "y": 0, "w": 390,  "h": 1280 },
+    { "file": "Fundamente.dc.html", "title": "Design system · 01 Fundamente", "x": 2200, "y": 0, "w": 1440, "h": 5600 },
+    { "file": "Componente.dc.html", "title": "Design system · 02 Componente", "x": 3760, "y": 0, "w": 1440, "h": 6650 }
   ],
   "annotations": [
-    { "id": "sursa", "x": 0, "y": -170, "w": 520, "text": "Design system Airvora, extras din stilurile globale ale kitului Elementor (askproject.net/airvora).\nFundamente în stânga, componente în dreapta. Copy-ul din exemple este Aerconduct; cifrele și prețurile sunt marcate [de completat]." }
+    { "id": "homepage", "x": 0, "y": -170, "w": 560, "text": "Homepage Aerconduct, etapa 1: header + hero + bara de încredere, pe structura temei Airvora.\nCifrele din bara de încredere sunt de exemplu, de înlocuit cu cele reale. Logo-ul este cel din repo (assets/img/logo-white.svg)." },
+    { "id": "design-system", "x": 2200, "y": -170, "w": 560, "text": "Design system extras din stilurile globale ale temei Airvora (Elementor kit): paletă, tipografie, spațiere, forme și componente. Orice secțiune nouă a homepage-ului se construiește din aceste token-uri." }
   ],
   "launch": { "view": "canvas" }
 }

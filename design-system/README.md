@@ -4,9 +4,9 @@ Sistem de design extras din tema [Airvora – Commercial HVAC Services Elementor
 (autor askproject), analizând stilurile globale ale kitului din demo-ul live (`elementor-kit-16`).
 Este baza pentru noul homepage Aerconduct.
 
-- **Planșa vizuală** (canvas editabil): https://claude.ai/code/artifact/a27d6697-2dcf-40d5-b029-892ec8612769
+- **Canvasul unic** (design system + homepage, editabil): https://claude.ai/code/artifact/a27d6697-2dcf-40d5-b029-892ec8612769
 - **Token-uri CSS**: [`airvora-tokens.css`](airvora-tokens.css)
-- **Sursele planșelor**: [`canvas/`](canvas/) (`Main.dc.html` = Fundamente, `Componente.dc.html` = Componente)
+- **Sursele planșelor**: [`canvas/`](canvas/) (`Main.dc.html` = homepage desktop, `Mobil.dc.html` = homepage mobil, `Fundamente.dc.html`, `Componente.dc.html`)
 
 ## Rezumat
 
@@ -28,5 +28,7 @@ altfel, construim un layout propriu pe acest sistem de design.
 
 ## Homepage (în lucru)
 
-- **Etapa 1 – header + hero + bară de încredere**: https://claude.ai/code/artifact/4c3e344f-f62a-4a85-ab78-b9483a30057e
-  Sursele planșelor: [`canvas/homepage/`](canvas/homepage/) (`Main.dc.html` desktop 1440, `Mobil.dc.html` mobil 390).
+Toate planșele stau în același canvas, alături de design system.
+
+- **Etapa 1 – header + hero + bară de încredere**: `canvas/Main.dc.html` (desktop 1440) și `canvas/Mobil.dc.html` (mobil 390).
+  Cifrele din bara de încredere sunt de exemplu, de înlocuit cu cele reale.
