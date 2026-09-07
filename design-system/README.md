@@ -32,3 +32,5 @@ Toate planșele stau în același canvas, alături de design system.
 
 - **Etapa 1 – header + hero + bară de încredere**: `canvas/Main.dc.html` (desktop 1440) și `canvas/Mobil.dc.html` (mobil 390).
   Cifrele din bara de încredere sunt de exemplu, de înlocuit cu cele reale.
+- **Etapa 2 – „De ce Aerconduct”** pe layout-ul „About” din temă (verde închis, text + grilă de 4 diferențiatori + fotografie de 300 px).
+- **Etapa 3 – „Servicii”** pe layout-ul „Our Services” din temă (titlu centrat, carduri bej cu fotografie, titlu, text, link), pe 4 coloane pentru cele 8 servicii.
