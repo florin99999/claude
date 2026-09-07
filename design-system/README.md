@@ -50,8 +50,8 @@ Toate planșele stau în același canvas, alături de design system. Pagina este
 
 Aceleași roluri de culoare ca în temă, construite în jurul roșului `#E02127` și albastrului `#3EA8DE` din logo:
 navy `#0C1A2B` (primary), albastru închis `#10334F` (secondary), gri rece `#5B6470` (text), albastru brand `#3EA8DE` (accent),
-alb rece `#F3F5F7`, carduri `#E8EDF1`, border `#CFD6DD`. Roșul este culoarea de acțiune (butoane principale, marcajele etichetelor),
-albastrul preia rolul accentului (etichete pe închis, cifre, footer).
+alb rece `#F3F5F7`, carduri `#E8EDF1`, border `#CFD6DD`. Roșul apare doar pe butoanele de cerere de ofertă, albastrul preia rolul accentului (etichete pe închis, cifre, blocuri),
+iar footer-ul este pe albastru deschis `#D6ECF8`.
 
 - Token-uri: [`colors-v2.css`](colors-v2.css) (se încarcă după `airvora-tokens.css`).
 - Planșa „Design system v2 · Culori” și homepage-ul v2 (`canvas/V2*.dc.html`) sunt în același canvas. `canvas/build_v2.py` generează v2 din v1 prin înlocuirea culorilor.

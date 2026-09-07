@@ -27,9 +27,8 @@
   --color-black-a19:   rgba(0, 0, 0, 0.19);
 }
 
-/* Diferențe de utilizare față de v1 */
-.btn--primary, .btn--light { background: var(--color-red); color: var(--color-white); border-color: var(--color-red); }
-.btn--primary:hover, .btn--light:hover { background: var(--color-red-dark); border-color: var(--color-red-dark); color: var(--color-white); }
-.btn--secondary { background: var(--color-primary); color: var(--color-surface); border-color: var(--color-primary); }
-.btn--secondary:hover { background: var(--color-text); border-color: var(--color-text); }
-.eyebrow::before, .on-dark .eyebrow::before { background: var(--color-red); }
+/* Diferențe de utilizare față de v1: roșul apare doar pe butoanele de cerere de ofertă,
+   footer-ul este pe albastru deschis; etichetele și celelalte butoane urmează tema. */
+.btn--offer { background: var(--color-red); color: var(--color-white); border-color: var(--color-red); }
+.btn--offer:hover { background: var(--color-red-dark); border-color: var(--color-red-dark); color: var(--color-white); }
+.site-footer { background: var(--color-blue-tint); }

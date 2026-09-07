@@ -15,14 +15,16 @@
     .mono { font-family: 'Chivo Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace; font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: -0.3px; line-height: 1.4; }
     .btn { display: inline-flex; align-items: center; gap: 10px; border-radius: 5px; font-family: 'Chivo Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: -0.3px; line-height: 1.2; white-space: nowrap; cursor: pointer; transition: background-color .4s, color .4s, border-color .4s; }
     .btn svg { width: 14px; height: 14px; flex: none; }
-    .btn-light { background: #E02127; color: #FFFFFF; padding: 14px 18px; border: 0; }
-    .btn-light:hover { background: #B8151B; color: #FFFFFF; }
+    .btn-light { background: #F3F5F7; color: #0C1A2B; padding: 14px 18px; border: 0; }
+    .btn-light:hover { background: #3EA8DE; color: #0C1A2B; }
     .btn-outline { background: transparent; color: #3EA8DE; padding: 13px 17px; border: 1px solid rgba(243, 245, 247, 0.19); }
     .btn-outline:hover { background: #3EA8DE; color: #0C1A2B; border-color: #3EA8DE; }
     .btn-header { padding: 12px 14px; }
     .nav a { display: block; padding: 8px 15px; color: #CFD6DD; }
     .nav a:hover { color: #3EA8DE; }
     .nav a.active { color: #3EA8DE; }
+    .btn-light[href="/cerere-oferta/"] { background: #E02127; color: #FFFFFF; }
+    .btn-light[href="/cerere-oferta/"]:hover { background: #B8151B; color: #FFFFFF; }
   </style>
 </helmet>
 <div style="width: 390px; position: relative; background: #F3F5F7;">
@@ -31,10 +33,10 @@
     <img src="parteneri-bg.jpg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; ">
     <div style="position: absolute; inset: 0; background-image: linear-gradient(180deg, rgba(12, 26, 43, 0.31) 0%, #0C1A2B 100%);"></div>
     <div style="position: relative; width: 100%; display: flex; flex-direction: column; gap: 20px;">
-      <div class="mono" style="display: flex; align-items: center; gap: 10px; color: #F3F5F7;"><span style="width: 9px; height: 9px; background: #E02127; flex: none;"></span><span>Pentru antreprenori și firme de instalații</span></div>
+      <div class="mono" style="display: flex; align-items: center; gap: 10px; color: #F3F5F7;"><span style="width: 9px; height: 9px; background: #3EA8DE; flex: none;"></span><span>Pentru antreprenori și firme de instalații</span></div>
       <h2 style="color: #F3F5F7; font-size: 32px; letter-spacing: -1.2px; font-weight: 400; line-height: 1.1; margin: 0; text-wrap: pretty; max-width: 700px;">Ai nevoie de o echipă de montaj tubulatură pe șantierul tău?</h2>
       <p style="color: #CFD6DD; max-width: 570px;">Lucrăm ca subcontractor pentru antreprenori generali și firme de instalații care au proiectul, dar nu au echipa. Preluăm partea de tubulatură integral – material, confecție, montaj, documentație – și ne integrăm în graficul tău de execuție. Disponibili pentru lucrări în toată țara, cu mobilizare rapidă în Moldova.</p>
-      <div style="margin-top: 10px;"><a class="btn" href="/parteneri/" style="background: #E02127; color: #FFFFFF; padding: 14px 18px; border: 0; "><span>Discută cu noi despre proiectul tău</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a></div>
+      <div style="margin-top: 10px;"><a class="btn" href="/parteneri/" style="background: #F3F5F7; color: #0C1A2B; padding: 14px 18px; border: 0; "><span>Discută cu noi despre proiectul tău</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a></div>
     </div>
     <div style="position: relative; width: 100%; display: flex; flex-direction: column;">
         <div style="display: flex; gap: 20px; align-items: flex-start; padding: 20px 0;">
@@ -70,7 +72,7 @@
   <!-- SECTIUNEA 8: Zone deservite (doua coloane: text + harta simpla) -->
   <section style="background: #E8EDF1; padding: 70px 10px; display: flex; flex-direction: column; gap: 30px; align-items: center;">
     <div style="width: 100%; display: flex; flex-direction: column; gap: 20px;">
-      <div class="mono" style="display: flex; align-items: center; gap: 10px; color: #0C1A2B;"><span style="width: 9px; height: 9px; background: #E02127; flex: none;"></span><span>Zone deservite</span></div>
+      <div class="mono" style="display: flex; align-items: center; gap: 10px; color: #0C1A2B;"><span style="width: 9px; height: 9px; background: #0C1A2B; flex: none;"></span><span>Zone deservite</span></div>
       <h2 style="color: #0C1A2B; font-size: 32px; letter-spacing: -1.2px; font-weight: 400; line-height: 1.1; margin: 0; text-wrap: pretty; max-width: 600px;">Montaj tubulatură de ventilație în Moldova și în toată România</h2>
       <p style="max-width: 570px;">Suntem în comuna Tămășeni, județul Neamț, la sub o oră de Iași, Bacău și Roman. Executăm lucrări curent în Neamț, Iași, Bacău, Suceava, Botoșani, Vaslui și Galați, și ne deplasăm pentru proiecte în orice județ.</p>
       <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 30px; margin-top: 10px; max-width: 480px;"><a href="/zone/piatra-neamt/" style="display: flex; align-items: center; gap: 10px; color: #0C1A2B;"><span style="width: 8px; height: 8px; background: #0C1A2B; flex: none;"></span><span>Piatra Neamț</span></a><a href="/zone/roman/" style="display: flex; align-items: center; gap: 10px; color: #0C1A2B;"><span style="width: 8px; height: 8px; background: #0C1A2B; flex: none;"></span><span>Roman</span></a><a href="/zone/iasi/" style="display: flex; align-items: center; gap: 10px; color: #0C1A2B;"><span style="width: 8px; height: 8px; background: #0C1A2B; flex: none;"></span><span>Iași</span></a><a href="/zone/bacău/" style="display: flex; align-items: center; gap: 10px; color: #0C1A2B;"><span style="width: 8px; height: 8px; background: #0C1A2B; flex: none;"></span><span>Bacău</span></a><a href="/zone/suceava/" style="display: flex; align-items: center; gap: 10px; color: #0C1A2B;"><span style="width: 8px; height: 8px; background: #0C1A2B; flex: none;"></span><span>Suceava</span></a><a href="/zone/botosani/" style="display: flex; align-items: center; gap: 10px; color: #0C1A2B;"><span style="width: 8px; height: 8px; background: #0C1A2B; flex: none;"></span><span>Botoșani</span></a><a href="/zone/vaslui/" style="display: flex; align-items: center; gap: 10px; color: #0C1A2B;"><span style="width: 8px; height: 8px; background: #0C1A2B; flex: none;"></span><span>Vaslui</span></a><a href="/zone/galati/" style="display: flex; align-items: center; gap: 10px; color: #0C1A2B;"><span style="width: 8px; height: 8px; background: #0C1A2B; flex: none;"></span><span>Galați</span></a><a href="/zone/bucuresti/" style="display: flex; align-items: center; gap: 10px; color: #0C1A2B;"><span style="width: 8px; height: 8px; background: #0C1A2B; flex: none;"></span><span>București</span></a><a href="/zone/alte-orase/" style="display: flex; align-items: center; gap: 10px; color: #0C1A2B;"><span style="width: 8px; height: 8px; background: #0C1A2B; flex: none;"></span><span>[alte orașe]</span></a></div>
@@ -94,7 +96,7 @@
   </section>
   <!-- SECTIUNEA 9: FAQ (layout "Answers to Common Questions" din tema) -->
   <section style="background: #F3F5F7; padding: 70px 10px; display: flex; flex-direction: column; gap: 20px;">
-    <div class="mono" style="display: flex; align-items: center; gap: 10px; color: #0C1A2B;"><span style="width: 9px; height: 9px; background: #E02127; flex: none;"></span><span>Întrebări frecvente</span></div>
+    <div class="mono" style="display: flex; align-items: center; gap: 10px; color: #0C1A2B;"><span style="width: 9px; height: 9px; background: #0C1A2B; flex: none;"></span><span>Întrebări frecvente</span></div>
     <h2 style="color: #0C1A2B; font-size: 32px; letter-spacing: -1.2px; font-weight: 400; line-height: 1.1; margin: 0; text-wrap: pretty; max-width: 550px; margin-bottom: 20px;">Întrebări frecvente</h2>
     <div style="display: flex; flex-direction: column;">
       <div style="border-bottom: 1px solid #CFD6DD; display: flex; flex-direction: column;">

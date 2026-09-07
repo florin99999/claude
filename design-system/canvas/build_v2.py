@@ -24,27 +24,15 @@ MAP = [
 ]
 def recolor(s):
     for a,b in MAP: s = s.replace(a,b)
-    # butonul principal (pe sectiuni inchise + header) devine rosu brand
-    s = s.replace('.btn-light { background: %s; color: %s; padding: 14px 18px; border: 0; }' % (V2['surface'], V2['primary']),
-                  '.btn-light { background: %s; color: %s; padding: 14px 18px; border: 0; }' % (V2['red'], V2['white']))
-    s = s.replace('.btn-light:hover { background: %s; color: %s; }' % (V2['accent'], V2['primary']),
-                  '.btn-light:hover { background: %s; color: %s; }' % (V2['red_dark'], V2['white']))
-    s = s.replace("background: %s; color: %s; padding: 14px 18px; border: 0;'" % (V2['surface'], V2['primary']), "XX")
-    # CTA-urile principale generate inline (btn('...','light')) -> rosu
-    s = s.replace('style="background: %s; color: %s; padding: 14px 18px; border: 0; "' % (V2['surface'], V2['primary']),
-                  'style="background: %s; color: %s; padding: 14px 18px; border: 0; "' % (V2['red'], V2['white']))
-    # butonul de trimitere a formularului -> rosu
+    # rosul doar pe CTA-urile de oferta: header, hero, "Incepe cu o cerere de oferta", trimiterea formularului
+    s = s.replace('.nav a.active { color: %s; }' % V2['accent'],
+                  '.nav a.active { color: %s; }\n    .btn-light[href="/cerere-oferta/"] { background: %s; color: %s; }\n    .btn-light[href="/cerere-oferta/"]:hover { background: %s; color: %s; }' % (V2['accent'], V2['red'], V2['white'], V2['red_dark'], V2['white']))
+    s = s.replace('href="/cerere-oferta/" style="background: %s; color: %s; padding: 14px 18px; border: 0; "' % (V2['surface'], V2['primary']),
+                  'href="/cerere-oferta/" style="background: %s; color: %s; padding: 14px 18px; border: 0; "' % (V2['red'], V2['white']))
     s = s.replace('style="background: %s; color: %s; padding: 14px 18px; border: 0; "><span>Trimite cererea de ofertă</span>' % (V2['primary'], V2['surface']),
                   'style="background: %s; color: %s; padding: 14px 18px; border: 0; "><span>Trimite cererea de ofertă</span>' % (V2['red'], V2['white']))
-    # marcajele patrate ale etichetelor -> rosu brand (pe deschis si pe inchis)
-    s = s.replace('width: 8px; height: 8px; background: %s; flex: none;' % V2['accent'], 'width: 8px; height: 8px; background: %s; flex: none;' % V2['red'])
-    s = s.replace('width: 9px; height: 9px; background: %s; flex: none;' % V2['accent'], 'width: 9px; height: 9px; background: %s; flex: none;' % V2['red'])
-    s = s.replace('width: 9px; height: 9px; background: %s; flex: none;' % V2['primary'], 'width: 9px; height: 9px; background: %s; flex: none;' % V2['red'])
-    # footer pe albastru brand: linkurile in navy pentru contrast
-    if '<footer' in s:
-        head, foot = s.split('<footer', 1)
-        foot = foot.replace('color: %s;' % V2['text'], 'color: %s;' % V2['primary'])
-        s = head + '<footer' + foot
+    # footer pe albastru deschis, mai putin dominant
+    s = s.replace('<footer style="background: %s;' % V2['accent'], '<footer style="background: %s;' % V2['blue_tint'])
     return s
 SRC = ['Main','HomeB','HomeC','Mobil','MobilB','MobilC','MobilD','MobilE']
 DST = ['V2Home','V2HomeB','V2HomeC','V2Mobil','V2MobilB','V2MobilC','V2MobilD','V2MobilE']
