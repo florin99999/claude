@@ -1,0 +1,210 @@
+/* ==========================================================================
+   Design system Airvora – token-uri
+   Extrase din stilurile globale ale kitului Elementor "Airvora – Commercial
+   HVAC Services" (askproject.net/airvora, elementor-kit-16).
+   Planșa vizuală: https://claude.ai/code/artifact/a27d6697-2dcf-40d5-b029-892ec8612769
+   ========================================================================== */
+
+:root {
+  /* ---- Culori ---------------------------------------------------------- */
+  --color-primary:     #241F21; /* titluri, butoane, footer          (kit: primary)   */
+  --color-secondary:   #062D2B; /* secțiuni închise: hero, CTA, cifre (kit: secondary) */
+  --color-text:        #5E5A5C; /* paragrafe, linkuri                 (kit: text)      */
+  --color-accent:      #F6F36F; /* etichete pe închis, cifre, blocuri (kit: accent)    */
+  --color-surface:     #F2EFE9; /* fundalul paginii, text pe închis   (kit: e9ff4fa)   */
+  --color-surface-2:   #ECE6DF; /* carduri, benzi alternative         (kit: 82893bf)   */
+  --color-border:      #D8D4CF; /* linii, separatoare                 (kit: 845ebe2)   */
+  --color-surface-3:   #DFDACE; /* fundal secundar pentru blocuri de cifre             */
+
+  --color-surface-a12: rgba(242, 239, 233, 0.125); /* separator pe închis  (#F2EFE920) */
+  --color-surface-a19: rgba(242, 239, 233, 0.19);  /* bordură câmp pe închis (#F2EFE930) */
+  --color-primary-a12: rgba(36, 31, 33, 0.125);    /* separator subtil pe deschis (#241F2120) */
+  --color-primary-a31: rgba(36, 31, 33, 0.31);     /* overlay pe fotografii (#241F2150) */
+  --color-black-a19:   rgba(0, 0, 0, 0.19);        /* umbră de text pe imagini (#00000030) */
+
+  /* ---- Fonturi --------------------------------------------------------- */
+  --font-sans: "Plus Jakarta Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-mono: "Chivo Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  /* ---- Scară tipografică (desktop > 1024px) ---------------------------- */
+  /* Toate titlurile: grosime 400. H5/H6: 500. Etichete: Chivo Mono 500 majuscule. */
+  --text-display-size: 90px;  --text-display-lh: 1;    --text-display-ls: -3px;   --text-display-ws: 8px;
+  --text-h1-size:      67px;  --text-h1-lh: 1.1;       --text-h1-ls: -3px;
+  --text-h2-size:      50px;  --text-h2-lh: 1.1;       --text-h2-ls: -2px;
+  --text-h3-size:      36px;  --text-h3-lh: 1.2;       --text-h3-ls: -1.2px;      --text-h3-ws: 5px;
+  --text-h4-size:      28px;  --text-h4-lh: 1.2;       --text-h4-ls: -1.2px;      --text-h4-ws: 5px;
+  --text-h5-size:      21px;  --text-h5-lh: 1.3;       --text-h5-ls: -0.8px;      --text-h5-ws: 3px;
+  --text-h6-size:      17px;  --text-h6-lh: 1.3;       --text-h6-ls: -0.6px;      --text-h6-ws: 2px;
+  --text-body-size:    15px;  --text-body-lh: 1.5;     --text-body-ls: -0.4px;
+  --text-label-size:   12px;  --text-label-lh: 1.4;    --text-label-ls: -0.3px;
+
+  /* ---- Spațiere -------------------------------------------------------- */
+  --space-1:  10px;  /* gap grilă, listă */
+  --space-2:  20px;  /* spațiu între widget-uri, margini container */
+  --space-3:  30px;  /* padding card */
+  --space-4:  70px;  /* padding secțiune */
+  --space-5: 100px;  /* padding secțiune mare */
+
+  --container-max: 1200px;
+  --container-pad: 20px;
+  --col-text-sm: 400px;  /* paragraf sub titlu */
+  --col-text-md: 500px;
+  --col-text-lg: 570px;  /* titlu H2 de secțiune */
+
+  /* ---- Forme ----------------------------------------------------------- */
+  --radius-0:    0px;    /* carduri, imagini, câmpuri, acordeon */
+  --radius-btn:  5px;    /* butoane */
+  --radius-pill: 100px;  /* tag-uri */
+  --radius-full: 500px;  /* avataruri, butoane icon */
+  --border-w:    1px;
+  --border-w-hl: 3px;    /* doar elementul evidențiat */
+  --shadow:      none;
+
+  /* ---- Butoane --------------------------------------------------------- */
+  --btn-pad:        14px 18px;
+  --btn-pad-header: 12px 14px;
+  --btn-pad-small:  10px 12px;
+  --btn-icon:       14px;
+  --btn-gap:        10px;
+  --btn-transition: 0.4s;
+
+  /* ---- Iconografie ----------------------------------------------------- */
+  --icon-sm: 14px;   /* în butoane, linkuri */
+  --icon-md: 26px;   /* icon-box, carduri (24–27px) */
+  --bullet:   8px;   /* pătrat plin de listă (7–8px) */
+}
+
+/* Tabletă 768–1024px */
+@media (max-width: 1024px) {
+  :root {
+    --text-display-size: 70px; --text-display-ls: -2.2px;
+    --text-h1-size: 52px;      --text-h1-ls: -2px;
+    --text-h2-size: 40px;      --text-h2-ls: -1.5px;
+    --text-h3-size: 32px;      --text-h3-ls: -1px;
+    --text-h4-size: 25px;      --text-h4-ls: -1px;
+    --text-h5-size: 19px;
+    --text-h6-size: 17px;
+    --text-body-size: 15px;
+    --text-label-size: 12px;
+  }
+}
+
+/* Mobil < 768px */
+@media (max-width: 767px) {
+  :root {
+    --text-display-size: 68px; --text-display-ls: -2px;
+    --text-h1-size: 40px;      --text-h1-ls: -1.5px;
+    --text-h2-size: 32px;      --text-h2-ls: -1.2px;
+    --text-h3-size: 30px;      --text-h3-ls: -1px;
+    --text-h4-size: 23px;      --text-h4-ls: -1px;
+    --text-h5-size: 18px;
+    --text-h6-size: 16px;
+    --text-body-size: 14px;
+    --text-label-size: 11px;
+  }
+}
+
+/* ==========================================================================
+   Stiluri de bază derivate din token-uri
+   ========================================================================== */
+
+body {
+  margin: 0;
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: var(--text-body-size);
+  line-height: var(--text-body-lh);
+  letter-spacing: var(--text-body-ls);
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--color-text); }
+a:hover { color: var(--color-primary); }
+
+h1, h2, h3, h4, h5, h6 { margin: 0; color: var(--color-primary); font-family: var(--font-sans); font-weight: 400; }
+h1 { font-size: var(--text-h1-size); line-height: var(--text-h1-lh); letter-spacing: var(--text-h1-ls); }
+h2 { font-size: var(--text-h2-size); line-height: var(--text-h2-lh); letter-spacing: var(--text-h2-ls); }
+h3 { font-size: var(--text-h3-size); line-height: var(--text-h3-lh); letter-spacing: var(--text-h3-ls); word-spacing: var(--text-h3-ws); }
+h4 { font-size: var(--text-h4-size); line-height: var(--text-h4-lh); letter-spacing: var(--text-h4-ls); word-spacing: var(--text-h4-ws); }
+h5 { font-size: var(--text-h5-size); line-height: var(--text-h5-lh); letter-spacing: var(--text-h5-ls); word-spacing: var(--text-h5-ws); font-weight: 500; }
+h6 { font-size: var(--text-h6-size); line-height: var(--text-h6-lh); letter-spacing: var(--text-h6-ls); word-spacing: var(--text-h6-ws); font-weight: 500; }
+
+.display {
+  font-size: var(--text-display-size); line-height: var(--text-display-lh);
+  letter-spacing: var(--text-display-ls); word-spacing: var(--text-display-ws);
+  color: var(--color-primary);
+}
+
+.label, .mono {
+  font-family: var(--font-mono); font-size: var(--text-label-size); font-weight: 500;
+  text-transform: uppercase; letter-spacing: var(--text-label-ls); line-height: var(--text-label-lh);
+}
+
+/* Etichetă de secțiune: pătrat de 8px + text mono */
+.eyebrow { display: flex; align-items: center; gap: var(--space-1); color: var(--color-primary); }
+.eyebrow::before { content: ""; width: var(--bullet); height: var(--bullet); background: currentColor; flex: none; }
+.on-dark .eyebrow, .eyebrow.on-dark { color: var(--color-accent); }
+
+/* Butoane */
+.btn {
+  display: inline-flex; align-items: center; gap: var(--btn-gap);
+  padding: var(--btn-pad); border-radius: var(--radius-btn); border: var(--border-w) solid transparent;
+  font-family: var(--font-mono); font-size: var(--text-label-size); font-weight: 500;
+  text-transform: uppercase; letter-spacing: var(--text-label-ls); line-height: 1.2;
+  cursor: pointer; white-space: nowrap; text-decoration: none;
+  transition: background-color var(--btn-transition), color var(--btn-transition), border-color var(--btn-transition);
+}
+.btn svg { width: var(--btn-icon); height: var(--btn-icon); flex: none; }
+.btn--primary { background: var(--color-primary); color: var(--color-surface); border-color: var(--color-primary); }
+.btn--primary:hover { background: var(--color-text); border-color: var(--color-text); color: var(--color-surface); }
+.btn--accent { background: var(--color-accent); color: var(--color-primary); border-color: var(--color-accent); }
+.btn--accent:hover { background: var(--color-border); border-color: var(--color-border); color: var(--color-primary); }
+.btn--light { background: var(--color-surface); color: var(--color-primary); border-color: var(--color-surface); }
+.btn--light:hover { background: var(--color-text); color: var(--color-surface); border-color: var(--color-text); }
+.btn--outline { background: transparent; color: var(--color-surface); border-color: var(--color-accent); }
+.btn--outline:hover { background: var(--color-accent); color: var(--color-primary); }
+.btn--link { background: transparent; color: var(--color-primary); padding: 0; border-radius: 0; }
+.btn--link:hover { color: var(--color-text); }
+.btn--header { padding: var(--btn-pad-header); }
+.btn--small { padding: var(--btn-pad-small); }
+
+/* Container și secțiuni */
+.container { max-width: var(--container-max); margin: 0 auto; padding: 0 var(--container-pad); }
+.section { padding: var(--space-4) 0; }
+.section--lg { padding: var(--space-5) 0; }
+.section--dark { background: var(--color-secondary); }
+.section--dark h1, .section--dark h2, .section--dark h3, .section--dark h4, .section--dark h5, .section--dark h6 { color: var(--color-surface); }
+.section--dark p { color: var(--color-border); }
+.section--accent { background: var(--color-accent); }
+.section--accent p { color: var(--color-primary); }
+
+/* Card */
+.card { background: var(--color-surface-2); border-radius: var(--radius-0); }
+.card__body { padding: var(--space-3); display: flex; flex-direction: column; gap: var(--space-1); }
+
+/* Listă cu pătrat */
+.list-square { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--space-1); }
+.list-square li { display: flex; align-items: center; gap: var(--space-1); color: var(--color-primary); }
+.list-square li::before { content: ""; width: var(--bullet); height: var(--bullet); background: currentColor; flex: none; }
+.on-dark .list-square li { color: var(--color-surface); }
+.on-dark .list-square li::before { background: var(--color-accent); }
+
+/* Câmpuri de formular */
+.field { display: flex; flex-direction: column; gap: 8px; }
+.field__input {
+  background: var(--color-surface); border: var(--border-w) solid var(--color-border); border-radius: var(--radius-0);
+  padding: 14px 16px; font: inherit; color: var(--color-primary);
+}
+.field__input::placeholder { color: var(--color-text); }
+.field__input:focus { outline: none; border-color: var(--color-primary); }
+.on-dark .field__input { background: transparent; border-color: var(--color-surface-a19); color: var(--color-surface); }
+
+/* Acordeon */
+.accordion__item { border-bottom: var(--border-w) solid var(--color-border); }
+.accordion__trigger { display: flex; justify-content: space-between; align-items: center; gap: 40px; padding: 12px 0 22px 0; cursor: pointer; }
+.accordion__body { max-width: 50%; padding: 0 var(--space-3) var(--space-3) 0; }
+
+/* Separatoare */
+.divider { height: var(--border-w); background: var(--color-border); }
+.on-dark .divider { background: var(--color-surface-a12); }

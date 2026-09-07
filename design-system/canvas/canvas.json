@@ -1,0 +1,10 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html", "title": "01 Fundamente", "x": 0, "y": 0, "w": 1440, "h": 5600 },
+    { "file": "Componente.dc.html", "title": "02 Componente", "x": 1560, "y": 0, "w": 1440, "h": 6650 }
+  ],
+  "annotations": [
+    { "id": "sursa", "x": 0, "y": -170, "w": 520, "text": "Design system Airvora, extras din stilurile globale ale kitului Elementor (askproject.net/airvora).\nFundamente în stânga, componente în dreapta. Copy-ul din exemple este Aerconduct; cifrele și prețurile sunt marcate [de completat]." }
+  ],
+  "launch": { "view": "canvas" }
+}

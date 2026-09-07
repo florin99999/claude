@@ -1,0 +1,412 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500&family=Chivo+Mono:wght@400;500&display=swap">
+  <style>
+    body { margin: 0; background: #F2EFE9; color: #5E5A5C; font-family: 'Plus Jakarta Sans', 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 15px; line-height: 1.5; letter-spacing: -0.4px; -webkit-font-smoothing: antialiased; }
+    a { color: #5E5A5C; text-decoration: none; } a:hover { color: #241F21; }
+    h1, h2, h3, h4, h5, h6, p { margin: 0; }
+    h1, h2, h3, h4, h5, h6 { color: #241F21; font-family: 'Plus Jakarta Sans', 'Segoe UI', Helvetica, Arial, sans-serif; font-weight: 400; }
+    h1 { font-size: 67px; line-height: 1.1; letter-spacing: -3px; }
+    h2 { font-size: 50px; line-height: 1.1; letter-spacing: -2px; }
+    h3 { font-size: 36px; line-height: 1.2; letter-spacing: -1.2px; word-spacing: 5px; }
+    h4 { font-size: 28px; line-height: 1.2; letter-spacing: -1.2px; word-spacing: 5px; }
+    h5 { font-size: 21px; line-height: 1.3; letter-spacing: -0.8px; word-spacing: 3px; font-weight: 500; }
+    h6 { font-size: 17px; line-height: 1.3; letter-spacing: -0.6px; word-spacing: 2px; font-weight: 500; }
+    .mono { font-family: 'Chivo Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace; font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: -0.3px; line-height: 1.4; }
+    .spec { font-family: 'Chivo Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace; font-size: 11px; font-weight: 400; letter-spacing: -0.2px; line-height: 1.5; color: #5E5A5C; text-transform: none; }
+    .sheet { width: 1440px; box-sizing: border-box; padding: 70px 80px 100px 80px; background: #F2EFE9; display: flex; flex-direction: column; gap: 100px; }
+    .sec { display: flex; flex-direction: column; gap: 30px; }
+    .sec-head { display: flex; flex-direction: column; gap: 10px; padding-bottom: 20px; border-bottom: 1px solid #D8D4CF; }
+    .eyebrow { display: flex; align-items: center; gap: 10px; color: #241F21; }
+    .eyebrow-dot { width: 8px; height: 8px; background: #241F21; flex: none; }
+    .eyebrow.on-dark { color: #F6F36F; } .eyebrow.on-dark .eyebrow-dot { background: #F6F36F; }
+    .btn { display: inline-flex; align-items: center; gap: 10px; padding: 14px 18px; border-radius: 5px; border: 1px solid transparent; font-family: 'Chivo Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: -0.3px; line-height: 1.2; cursor: pointer; white-space: nowrap; transition: background-color .4s, color .4s, border-color .4s; }
+    .btn svg { width: 14px; height: 14px; flex: none; }
+    .btn-primary { background: #241F21; color: #F2EFE9; border-color: #241F21; } .btn-primary:hover { background: #5E5A5C; border-color: #5E5A5C; }
+    .btn-accent { background: #F6F36F; color: #241F21; border-color: #F6F36F; } .btn-accent:hover { background: #D8D4CF; border-color: #D8D4CF; }
+    .btn-light { background: #F2EFE9; color: #241F21; border-color: #F2EFE9; } .btn-light:hover { background: #5E5A5C; color: #F2EFE9; border-color: #5E5A5C; }
+    .btn-outline { background: transparent; color: #F2EFE9; border-color: #F6F36F; } .btn-outline:hover { background: #F6F36F; color: #241F21; }
+    .btn-link { background: transparent; color: #241F21; padding: 0; border-radius: 0; } .btn-link:hover { color: #5E5A5C; }
+    .btn-link.on-dark { color: #F6F36F; } .btn-link.on-dark:hover { color: #F2EFE9; }
+    .btn-header { padding: 12px 14px; } .btn-small { padding: 10px 12px; }
+    .label { display: flex; flex-direction: column; gap: 4px; }
+    .label .name { color: #241F21; }
+  </style>
+</helmet>
+<div class="sheet">
+
+  <!-- ===== HEADER ===== -->
+  <div style="display: flex; flex-direction: column; gap: 30px;">
+    <div class="eyebrow mono"><span class="eyebrow-dot"></span><span>Airvora · Design system · Componente</span></div>
+    <h1 style="max-width: 900px;">Componente</h1>
+    <p style="max-width: 570px;">Butoane, etichete, carduri, pași, acordeon, formulare, navigație și footer, construite exclusiv din token-urile de pe planșa Fundamente.</p>
+  </div>
+
+  <!-- ===== 01 BUTOANE ===== -->
+  <div class="sec">
+    <div class="sec-head">
+      <div class="eyebrow mono"><span class="eyebrow-dot"></span><span>01 · Butoane</span></div>
+      <h2>Patru variante, o singură formă</h2>
+      <p style="max-width: 570px;">Chivo Mono 12 px majuscule, padding 14 × 18, rază 5 px, săgeată de 14 px după text, la 10 px distanță. Tranziție de 0.4 s pe culoare.</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px;">
+      <div style="background: #F2EFE9; border: 1px solid #D8D4CF; box-sizing: border-box; padding: 30px; display: flex; flex-direction: column; gap: 20px;">
+        <div class="spec">Pe fundal deschis</div>
+        <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+          <a class="btn btn-primary" href="#"><span>Cere ofertă</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+          <a class="btn btn-primary" href="#" style="background: #5E5A5C; border-color: #5E5A5C;"><span>Cere ofertă</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+          <span class="spec">Primar · hover: fundal Text</span>
+        </div>
+        <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+          <a class="btn btn-accent" href="#"><span>Alege planul</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+          <a class="btn btn-accent" href="#" style="background: #D8D4CF; border-color: #D8D4CF;"><span>Alege planul</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+          <span class="spec">Accent · hover: fundal Border</span>
+        </div>
+        <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+          <a class="btn btn-link" href="#"><span>Află mai mult</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+          <a class="btn btn-link" href="#" style="color: #5E5A5C;"><span>Află mai mult</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+          <span class="spec">Link · hover: culoare Text</span>
+        </div>
+      </div>
+      <div style="background: #062D2B; padding: 30px; display: flex; flex-direction: column; gap: 20px;">
+        <div class="spec" style="color: #D8D4CF;">Pe fundal închis</div>
+        <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+          <a class="btn btn-light" href="#"><span>Consultanță gratuită</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+          <a class="btn btn-light" href="#" style="background: #5E5A5C; color: #F2EFE9; border-color: #5E5A5C;"><span>Consultanță gratuită</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+          <span class="spec" style="color: #D8D4CF;">Deschis · hover: fundal Text</span>
+        </div>
+        <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+          <a class="btn btn-outline" href="#"><span>Vezi serviciile</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+          <a class="btn btn-outline" href="#" style="background: #F6F36F; color: #241F21;"><span>Vezi serviciile</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+          <span class="spec" style="color: #D8D4CF;">Contur · hover: fundal Accent</span>
+        </div>
+        <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+          <a class="btn btn-link on-dark" href="#"><span>Află mai mult</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+          <a class="btn btn-link on-dark" href="#" style="color: #F2EFE9;"><span>Află mai mult</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+          <span class="spec" style="color: #D8D4CF;">Link accent · hover: Surface</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: flex; gap: 30px; align-items: center; flex-wrap: wrap;">
+      <a class="btn btn-primary" href="#"><span>Implicit 14 × 18</span></a>
+      <a class="btn btn-primary btn-header" href="#"><span>Header 12 × 14</span></a>
+      <a class="btn btn-primary btn-small" href="#"><span>Mic 10 × 12</span></a>
+      <a class="btn btn-primary" href="#" style="border-radius: 500px; padding: 14px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a>
+      <span class="spec">Mărimi · buton icon rotund 42 px</span>
+    </div>
+  </div>
+
+  <!-- ===== 02 ETICHETE ===== -->
+  <div class="sec">
+    <div class="sec-head">
+      <div class="eyebrow mono"><span class="eyebrow-dot"></span><span>02 · Etichete și tag-uri</span></div>
+      <h2>Eticheta de secțiune</h2>
+      <p style="max-width: 570px;">Fiecare secțiune începe cu un pătrat de 8 px și un text Chivo Mono majuscule. Pe deschis totul este primary, pe închis totul este accent.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px;">
+      <div style="background: #F2EFE9; border: 1px solid #D8D4CF; box-sizing: border-box; padding: 30px; display: flex; flex-direction: column; gap: 20px;">
+        <div class="eyebrow mono"><span class="eyebrow-dot"></span><span>Serviciile noastre</span></div>
+        <div class="eyebrow mono"><span class="eyebrow-dot"></span><span>Proiecte recente</span></div>
+        <div class="spec">Etichetă pe deschis</div>
+      </div>
+      <div style="background: #062D2B; padding: 30px; display: flex; flex-direction: column; gap: 20px;">
+        <div class="eyebrow mono on-dark"><span class="eyebrow-dot"></span><span>Despre noi</span></div>
+        <div class="eyebrow mono on-dark"><span class="eyebrow-dot"></span><span>Procesul de lucru</span></div>
+        <div class="spec" style="color: #D8D4CF;">Etichetă pe închis</div>
+      </div>
+      <div style="background: #ECE6DF; padding: 30px; display: flex; flex-direction: column; gap: 20px;">
+        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+          <span class="mono" style="color: #241F21; border: 1px solid #241F21; border-radius: 100px; padding: 6px 12px;">Comercial</span>
+          <span class="mono" style="color: #241F21; background: #F6F36F; border: 1px solid #F6F36F; border-radius: 100px; padding: 6px 12px;">Industrial</span>
+          <span class="mono" style="color: #F2EFE9; background: #241F21; border: 1px solid #241F21; border-radius: 100px; padding: 6px 12px;">Spitale</span>
+        </div>
+        <div class="mono" style="color: #5E5A5C;">12 Sept 2026 · Tubulatură</div>
+        <div class="spec">Tag-uri pastilă 100 px · meta articol</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 03 ANTET SECTIUNE ===== -->
+  <div class="sec">
+    <div class="sec-head">
+      <div class="eyebrow mono"><span class="eyebrow-dot"></span><span>03 · Antet de secțiune</span></div>
+      <h2>Etichetă, titlu, text, acțiune</h2>
+      <p style="max-width: 570px;">Ordinea și lățimile sunt fixe: titlul H2 pe maximum 570 px, paragraful pe 400 px, butonul aliniat jos-dreapta când antetul e pe două coloane.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px;">
+      <div style="background: #F2EFE9; border: 1px solid #D8D4CF; box-sizing: border-box; padding: 70px 40px; display: flex; flex-direction: column; gap: 20px;">
+        <div class="eyebrow mono"><span class="eyebrow-dot"></span><span>Serviciile noastre</span></div>
+        <h2 style="max-width: 570px;">Soluții complete de ventilație pentru clădiri comerciale</h2>
+        <p style="max-width: 400px;">De la proiect la punere în funcțiune, cu echipă proprie de montaj și materiale la pachet.</p>
+        <div><a class="btn btn-primary" href="#"><span>Vezi toate serviciile</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a></div>
+      </div>
+      <div style="background: #062D2B; padding: 70px 40px; display: flex; flex-direction: column; gap: 20px;">
+        <div class="eyebrow mono on-dark"><span class="eyebrow-dot"></span><span>Procesul de lucru</span></div>
+        <h2 style="max-width: 570px; color: #F2EFE9;">Un proces clar, de la măsurători la recepție</h2>
+        <p style="max-width: 400px; color: #D8D4CF;">Patru pași, un singur partener pentru toată tubulatura de pe șantier.</p>
+        <div><a class="btn btn-accent" href="#"><span>Programează o vizită</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 04 CARDURI ===== -->
+  <div class="sec">
+    <div class="sec-head">
+      <div class="eyebrow mono"><span class="eyebrow-dot"></span><span>04 · Carduri</span></div>
+      <h2>Carduri</h2>
+      <p style="max-width: 570px;">Fundal bej, colțuri drepte, imagine sus, titlu H4, text, link. Blocurile de cifre folosesc stilul Display pe fundal verde închis sau accent.</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px;">
+      <div style="background: #ECE6DF; display: flex; flex-direction: column;">
+        <div style="height: 220px; background: #062D2B; display: flex; align-items: end; padding: 20px;"><span class="mono" style="color: #F6F36F;">Imagine 4:3</span></div>
+        <div style="padding: 30px; display: flex; flex-direction: column; gap: 10px;">
+          <h4>Montaj tubulatură zincată</h4>
+          <p>Trasee rectangulare și circulare pentru hale, depozite și spații comerciale mari.</p>
+          <div style="padding-top: 10px;"><a class="btn btn-link" href="#"><span>Află mai mult</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a></div>
+        </div>
+      </div>
+      <div style="background: #ECE6DF; display: flex; flex-direction: column;">
+        <div style="padding: 30px; display: flex; flex-direction: column; gap: 20px; height: 100%; box-sizing: border-box;">
+          <div style="width: 26px; height: 26px; color: #241F21;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18"></path><path d="M3 15h18"></path><path d="M9 3v18"></path><path d="M15 3v18"></path></svg></div>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <h5>Teste de etanșeitate</h5>
+            <p>Raport de măsurători conform clasei de etanșeitate din proiect, la cerere.</p>
+          </div>
+          <div class="spec" style="margin-top: auto;">Icon-box · iconiță 26 px, H5, text</div>
+        </div>
+      </div>
+      <div style="display: grid; grid-template-rows: repeat(2, minmax(0, 1fr)); gap: 10px;">
+        <div style="background: #062D2B; padding: 30px; display: flex; flex-direction: column; justify-content: space-between; gap: 20px;">
+          <div style="font-size: 90px; line-height: 1; letter-spacing: -3px; color: #F6F36F;">48<span style="font-size: 50px; letter-spacing: -2px;">h</span></div>
+          <p style="color: #F2EFE9;">Timp de răspuns cu ofertă detaliată</p>
+        </div>
+        <div style="background: #F6F36F; padding: 30px; display: flex; flex-direction: column; justify-content: space-between; gap: 20px;">
+          <div style="font-size: 50px; line-height: 1.1; letter-spacing: -2px; color: #241F21;">[N]<span style="font-size: 28px; letter-spacing: -1.2px;">+</span></div>
+          <p style="color: #241F21;">Proiecte finalizate · cifra de completat</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px;">
+      <div style="background: #ECE6DF; padding: 40px 30px; display: flex; flex-direction: column; gap: 30px;">
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <div class="mono" style="color: #241F21;">Plan esențial</div>
+          <div style="display: flex; align-items: baseline; gap: 10px;"><h2>[PREȚ]</h2><span class="mono" style="color: #5E5A5C;">/ lună</span></div>
+          <p>Inspecție periodică și intervenții programate.</p>
+        </div>
+        <div style="height: 1px; background: #D8D4CF;"></div>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <div style="display: flex; align-items: center; gap: 10px;"><div style="width: 8px; height: 8px; background: #241F21; flex: none;"></div><span style="color: #241F21;">Două vizite pe an</span></div>
+          <div style="display: flex; align-items: center; gap: 10px;"><div style="width: 8px; height: 8px; background: #241F21; flex: none;"></div><span style="color: #241F21;">Raport de stare</span></div>
+          <div style="display: flex; align-items: center; gap: 10px;"><div style="width: 8px; height: 8px; background: #241F21; flex: none;"></div><span style="color: #241F21;">Suport telefonic</span></div>
+        </div>
+        <div><a class="btn btn-primary" href="#"><span>Alege planul</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a></div>
+      </div>
+      <div style="background: #062D2B; padding: 40px 30px; display: flex; flex-direction: column; gap: 30px;">
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <div style="display: flex; justify-content: space-between; align-items: center;"><div class="mono" style="color: #F6F36F;">Plan profesional</div><span class="mono" style="color: #241F21; background: #F6F36F; border-radius: 100px; padding: 4px 10px;">Recomandat</span></div>
+          <div style="display: flex; align-items: baseline; gap: 10px;"><h2 style="color: #F2EFE9;">[PREȚ]</h2><span class="mono" style="color: #D8D4CF;">/ lună</span></div>
+          <p style="color: #D8D4CF;">Mentenanță completă, cu prioritate la intervenții.</p>
+        </div>
+        <div style="height: 1px; background: rgba(242, 239, 233, 0.125);"></div>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <div style="display: flex; align-items: center; gap: 10px;"><div style="width: 8px; height: 8px; background: #F6F36F; flex: none;"></div><span style="color: #F2EFE9;">Patru vizite pe an</span></div>
+          <div style="display: flex; align-items: center; gap: 10px;"><div style="width: 8px; height: 8px; background: #F6F36F; flex: none;"></div><span style="color: #F2EFE9;">Teste de etanșeitate</span></div>
+          <div style="display: flex; align-items: center; gap: 10px;"><div style="width: 8px; height: 8px; background: #F6F36F; flex: none;"></div><span style="color: #F2EFE9;">Intervenție în 24 h</span></div>
+        </div>
+        <div><a class="btn btn-accent" href="#"><span>Alege planul</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a></div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <div style="background: #ECE6DF; display: flex; flex-direction: column;">
+          <div style="height: 200px; background: #D8D4CF; display: flex; align-items: end; padding: 20px;"><span class="mono" style="color: #241F21;">Portret 3:4</span></div>
+          <div style="padding: 20px 30px 30px 30px; display: flex; flex-direction: column; gap: 4px;">
+            <h4>[Nume Prenume]</h4>
+            <div class="mono" style="color: #5E5A5C;">Șef echipă montaj</div>
+          </div>
+        </div>
+        <div style="background: #ECE6DF; padding: 20px 30px; display: flex; gap: 20px; align-items: center;">
+          <div style="width: 50px; height: 50px; border-radius: 500px; background: #062D2B; flex: none;"></div>
+          <div style="display: flex; flex-direction: column;"><h6>[Nume client]</h6><span class="mono" style="color: #5E5A5C;">Antreprenor general</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 05 PASI ===== -->
+  <div class="sec">
+    <div class="sec-head">
+      <div class="eyebrow mono"><span class="eyebrow-dot"></span><span>05 · Pași</span></div>
+      <h2>Pașii procesului</h2>
+      <p style="max-width: 570px;">Numărul pasului la 90 px, o linie de 1 px, apoi titlul H3 și textul. Grilă de două coloane cu spațiu de 20 px.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px;">
+      <div style="display: flex; flex-direction: column; gap: 20px; padding: 30px 0; border-top: 1px solid #241F21;">
+        <div style="font-size: 90px; line-height: 1; letter-spacing: -3px; word-spacing: 8px; color: #241F21;">Pas 01</div>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <h3>Vizită și măsurători</h3>
+          <p style="max-width: 400px;">Venim pe șantier, verificăm planul și traseele, propunem soluția potrivită.</p>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 20px; padding: 30px 0; border-top: 1px solid #241F21;">
+        <div style="font-size: 90px; line-height: 1; letter-spacing: -3px; word-spacing: 8px; color: #241F21;">Pas 02</div>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <h3>Ofertă în 48 de ore</h3>
+          <p style="max-width: 400px;">Preț pe metru liniar sau metru pătrat, cu materiale și manoperă detaliate.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 06 ACORDEON ===== -->
+  <div class="sec">
+    <div class="sec-head">
+      <div class="eyebrow mono"><span class="eyebrow-dot"></span><span>06 · Acordeon FAQ</span></div>
+      <h2>Întrebări frecvente</h2>
+      <p style="max-width: 570px;">Rânduri separate printr-o linie de 1 px în Border. Întrebarea este H5, iconița plus/minus de 16 – 20 px în culoarea Text, răspunsul pe maximum 50% lățime.</p>
+    </div>
+    <div style="display: flex; flex-direction: column; max-width: 1000px;">
+      <div style="border-bottom: 1px solid #D8D4CF; display: flex; flex-direction: column;">
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: 40px; padding: 12px 0 22px 0;">
+          <h5>Cât costă tubulatura de ventilație?</h5>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5E5A5C" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"></path></svg>
+        </div>
+        <p style="max-width: 50%; padding: 0 30px 30px 0;">Prețul se calculează pe metru liniar sau pe metru pătrat de tablă și depinde de secțiune, material, clasa de etanșeitate și complexitatea traseului.</p>
+      </div>
+      <div style="border-bottom: 1px solid #D8D4CF; display: flex; justify-content: space-between; align-items: center; gap: 40px; padding: 22px 0;">
+        <h5>Lucrați și în afara Moldovei?</h5>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5E5A5C" stroke-width="2" stroke-linecap="round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg>
+      </div>
+      <div style="border-bottom: 1px solid #D8D4CF; display: flex; justify-content: space-between; align-items: center; gap: 40px; padding: 22px 0;">
+        <h5>Puteți lucra ca subcontractor?</h5>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5E5A5C" stroke-width="2" stroke-linecap="round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 07 FORMULARE ===== -->
+  <div class="sec">
+    <div class="sec-head">
+      <div class="eyebrow mono"><span class="eyebrow-dot"></span><span>07 · Formulare</span></div>
+      <h2>Câmpuri</h2>
+      <p style="max-width: 570px;">Colțuri drepte, bordură de 1 px, text de 15 px în Primary, placeholder în Text. Eticheta câmpului este Chivo Mono. Butonul de trimitere este cel primar sau accent.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px;">
+      <div style="background: #ECE6DF; padding: 40px; display: flex; flex-direction: column; gap: 20px;">
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px;">
+          <div style="display: flex; flex-direction: column; gap: 8px;"><span class="mono" style="color: #241F21;">Nume</span><div style="background: #F2EFE9; border: 1px solid #D8D4CF; padding: 14px 16px; color: #5E5A5C;">Numele tău</div></div>
+          <div style="display: flex; flex-direction: column; gap: 8px;"><span class="mono" style="color: #241F21;">Telefon</span><div style="background: #F2EFE9; border: 1px solid #241F21; padding: 14px 16px; color: #241F21;">+40 7</div></div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px;"><span class="mono" style="color: #241F21;">Tip lucrare</span><div style="background: #F2EFE9; border: 1px solid #D8D4CF; padding: 14px 16px; color: #241F21; display: flex; justify-content: space-between; align-items: center;"><span>Hală industrială</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg></div></div>
+        <div style="display: flex; flex-direction: column; gap: 8px;"><span class="mono" style="color: #241F21;">Mesaj</span><div style="background: #F2EFE9; border: 1px solid #D8D4CF; padding: 14px 16px; color: #5E5A5C; min-height: 90px;">Descrie proiectul sau atașează planul</div></div>
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: 20px;">
+          <span class="spec">implicit · focus: bordură Primary · eroare: text 12 px în Primary</span>
+          <a class="btn btn-primary" href="#"><span>Trimite cererea</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+        </div>
+      </div>
+      <div style="background: #241F21; padding: 40px; display: flex; flex-direction: column; gap: 20px; justify-content: center;">
+        <h3 style="color: #F2EFE9; max-width: 400px;">Abonează-te la noutăți</h3>
+        <p style="color: #D8D4CF; max-width: 400px;">Sfaturi despre ventilație și eficiență energetică, o dată pe lună.</p>
+        <div style="display: flex; gap: 10px;">
+          <div style="flex: 1; background: transparent; border: 1px solid rgba(242, 239, 233, 0.3); padding: 14px 16px; color: #D8D4CF;">adresa@firma.ro</div>
+          <a class="btn btn-accent" href="#"><span>Abonează-te</span></a>
+        </div>
+        <div class="spec" style="color: #D8D4CF;">câmp pe închis · bordură Surface 30% · fundal transparent</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 08 NAVIGATIE ===== -->
+  <div class="sec">
+    <div class="sec-head">
+      <div class="eyebrow mono"><span class="eyebrow-dot"></span><span>08 · Navigație</span></div>
+      <h2>Header</h2>
+      <p style="max-width: 570px;">O bară de informații pe Primary, apoi bara de meniu pe Surface. Elementele de meniu sunt Chivo Mono majuscule, elementul activ este în Primary. Butonul din header are padding 12 × 14.</p>
+    </div>
+    <div style="display: flex; flex-direction: column; border: 1px solid #D8D4CF;">
+      <div style="background: #241F21; padding: 10px 40px; display: flex; justify-content: space-between; align-items: center;">
+        <div style="display: flex; gap: 30px;">
+          <span class="mono" style="color: #D8D4CF;">Tămășeni, Neamț · deplasare în toată țara</span>
+          <span class="mono" style="color: #D8D4CF;">Luni – Vineri · 08:00 – 17:00</span>
+        </div>
+        <div style="display: flex; gap: 30px;">
+          <span class="mono" style="color: #F2EFE9;">office@aerconduct.ro</span>
+          <span class="mono" style="color: #F6F36F;">+40 765 887 236</span>
+        </div>
+      </div>
+      <div style="background: #F2EFE9; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center;">
+        <div style="display: flex; align-items: center; gap: 10px;"><div style="width: 32px; height: 32px; background: #062D2B;"></div><h6>Aerconduct</h6></div>
+        <div style="display: flex; gap: 30px; align-items: center;">
+          <span class="mono" style="color: #241F21;">Acasă</span>
+          <span class="mono" style="color: #5E5A5C;">Servicii</span>
+          <span class="mono" style="color: #5E5A5C;">Industrii</span>
+          <span class="mono" style="color: #5E5A5C;">Proiecte</span>
+          <span class="mono" style="color: #5E5A5C;">Despre</span>
+          <span class="mono" style="color: #5E5A5C;">Contact</span>
+        </div>
+        <a class="btn btn-primary btn-header" href="#"><span>Cere ofertă</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+      </div>
+    </div>
+    <div style="display: flex; flex-direction: column;">
+      <div style="background: #062D2B; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center;">
+        <div style="display: flex; align-items: center; gap: 10px;"><div style="width: 32px; height: 32px; background: #F6F36F;"></div><h6 style="color: #F2EFE9;">Aerconduct</h6></div>
+        <div style="display: flex; gap: 30px; align-items: center;">
+          <span class="mono" style="color: #F6F36F;">Acasă</span>
+          <span class="mono" style="color: #F2EFE9;">Servicii</span>
+          <span class="mono" style="color: #F2EFE9;">Industrii</span>
+          <span class="mono" style="color: #F2EFE9;">Proiecte</span>
+          <span class="mono" style="color: #F2EFE9;">Despre</span>
+          <span class="mono" style="color: #F2EFE9;">Contact</span>
+        </div>
+        <a class="btn btn-light btn-header" href="#"><span>Cere ofertă</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+      </div>
+      <div class="spec" style="padding-top: 10px;">Varianta pe hero închis · element activ în Accent · buton Deschis</div>
+    </div>
+  </div>
+
+  <!-- ===== 09 FOOTER ===== -->
+  <div class="sec">
+    <div class="sec-head">
+      <div class="eyebrow mono"><span class="eyebrow-dot"></span><span>09 · Footer</span></div>
+      <h2>Footer</h2>
+      <p style="max-width: 570px;">Corpul pe Primary, cu titluri de coloană H6 în Surface și linkuri în Border. Bara de jos pe Accent, cu text Chivo Mono în Primary.</p>
+    </div>
+    <div style="display: flex; flex-direction: column;">
+      <div style="background: #241F21; padding: 70px 40px; display: grid; grid-template-columns: 340px repeat(3, minmax(0, 1fr)); gap: 20px;">
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          <div style="display: flex; align-items: center; gap: 10px;"><div style="width: 32px; height: 32px; background: #F6F36F;"></div><h6 style="color: #F2EFE9;">Aerconduct</h6></div>
+          <p style="color: #D8D4CF; max-width: 280px;">Execuție și montaj tubulatură de ventilație industrială și comercială.</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          <h6 style="color: #F2EFE9;">Companie</h6>
+          <div style="display: flex; flex-direction: column; gap: 10px;"><span style="color: #D8D4CF;">Despre noi</span><span style="color: #D8D4CF;">Proiecte</span><span style="color: #F2EFE9;">Contact · hover</span></div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          <h6 style="color: #F2EFE9;">Servicii</h6>
+          <div style="display: flex; flex-direction: column; gap: 10px;"><span style="color: #D8D4CF;">Tubulatură zincată</span><span style="color: #D8D4CF;">Tubulatură ALP</span><span style="color: #D8D4CF;">Desfumare</span></div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          <h6 style="color: #F2EFE9;">Contact</h6>
+          <div style="display: flex; flex-direction: column; gap: 10px;"><span style="color: #D8D4CF;">office@aerconduct.ro</span><span style="color: #D8D4CF;">+40 765 887 236</span><span style="color: #D8D4CF;">Tămășeni, Neamț</span></div>
+        </div>
+      </div>
+      <div style="background: #F6F36F; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center;">
+        <span class="mono" style="color: #241F21;">© 2026 Aerconduct · [Denumire firmă SRL] · CUI [de completat]</span>
+        <div style="display: flex; gap: 20px;"><span class="mono" style="color: #241F21;">Termeni</span><span class="mono" style="color: #241F21;">Confidențialitate</span></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>
