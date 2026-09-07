@@ -25,3 +25,8 @@ Este baza pentru noul homepage Aerconduct.
 Culorile, fonturile și proporțiile nu sunt protejate, dar imaginile demo și layout-ul exact al paginilor din kit sunt
 opera autorului. Pentru un homepage „identic” cu demo-ul este nevoie de licența kitului de pe ThemeForest;
 altfel, construim un layout propriu pe acest sistem de design.
+
+## Homepage (în lucru)
+
+- **Etapa 1 – header + hero + bară de încredere**: https://claude.ai/code/artifact/4c3e344f-f62a-4a85-ab78-b9483a30057e
+  Sursele planșelor: [`canvas/homepage/`](canvas/homepage/) (`Main.dc.html` desktop 1440, `Mobil.dc.html` mobil 390).
