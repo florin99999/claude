@@ -2,19 +2,67 @@
   "artboards": [
     {
       "file": "Main.dc.html",
-      "title": "Homepage · Desktop 1440",
+      "title": "Homepage · Desktop 1/3 · hero, De ce, Servicii",
       "x": 0,
       "y": 0,
       "w": 1440,
-      "h": 11900
+      "h": 3340
+    },
+    {
+      "file": "HomeB.dc.html",
+      "title": "Homepage · Desktop 2/3 · Proces, Industrii, Proiecte",
+      "x": 0,
+      "y": 3460,
+      "w": 1440,
+      "h": 4730
+    },
+    {
+      "file": "HomeC.dc.html",
+      "title": "Homepage · Desktop 3/3 · Antreprenori, Zone, FAQ, CTA, Footer",
+      "x": 0,
+      "y": 8310,
+      "w": 1440,
+      "h": 3880
     },
     {
       "file": "Mobil.dc.html",
-      "title": "Homepage · Mobil 390",
+      "title": "Homepage · Mobil 1/5",
       "x": 1560,
       "y": 0,
       "w": 390,
-      "h": 19250
+      "h": 3010
+    },
+    {
+      "file": "MobilB.dc.html",
+      "title": "Homepage · Mobil 2/5",
+      "x": 1560,
+      "y": 3130,
+      "w": 390,
+      "h": 4800
+    },
+    {
+      "file": "MobilC.dc.html",
+      "title": "Homepage · Mobil 3/5",
+      "x": 1560,
+      "y": 8050,
+      "w": 390,
+      "h": 5340
+    },
+    {
+      "file": "MobilD.dc.html",
+      "title": "Homepage · Mobil 4/5",
+      "x": 1560,
+      "y": 13510,
+      "w": 390,
+      "h": 2860
+    },
+    {
+      "file": "MobilE.dc.html",
+      "title": "Homepage · Mobil 5/5",
+      "x": 1560,
+      "y": 16490,
+      "w": 390,
+      "h": 3320
     },
     {
       "file": "Fundamente.dc.html",
@@ -37,9 +85,9 @@
     {
       "id": "homepage",
       "x": 0,
-      "y": -170,
-      "w": 560,
-      "text": "Homepage Aerconduct complet, pe structura temei Airvora: header + hero, De ce Aerconduct (About), Servicii, Cum lucrăm (Process), Industrii (carduri blog), Proiecte (Projects), Pentru antreprenori (Why choose us), Zone deservite, FAQ, CTA + formular, footer.\nValorile între paranteze drepte sunt de completat. Cifrele din bara de încredere sunt de exemplu."
+      "y": -190,
+      "w": 620,
+      "text": "Homepage Aerconduct, pe structura temei Airvora. Pagina este împărțită în 3 planșe pe desktop (5 pe mobil), așezate în continuare una sub alta – planșele foarte înalte nu se randau complet în editor.\nValorile între paranteze drepte sunt de completat. Cifrele din bara de încredere sunt de exemplu."
     },
     {
       "id": "design-system",

@@ -28,7 +28,7 @@ altfel, construim un layout propriu pe acest sistem de design.
 
 ## Homepage
 
-Toate planșele stau în același canvas, alături de design system. Secțiunile homepage-ului și layout-ul din temă pe care îl urmează:
+Toate planșele stau în același canvas, alături de design system. Pagina este împărțită în 3 planșe pe desktop (`Main`, `HomeB`, `HomeC`) și 5 pe mobil (`Mobil` … `MobilE`), așezate una sub alta în continuare, pentru că planșele foarte înalte nu se randează complet în editor. Secțiunile homepage-ului și layout-ul din temă pe care îl urmează:
 
 | Secțiune | Layout din tema Airvora |
 |---|---|
@@ -44,4 +44,4 @@ Toate planșele stau în același canvas, alături de design system. Secțiunile
 | CTA + formular | „Ready to get started” pe negru cald, cu formular pe card bej |
 | Footer | Footer pe fundal accent, 4 coloane, rând legal jos |
 
-`canvas/build_sections.py` generează secțiunile 2–10 și footer-ul din conținut, pentru desktop și mobil. Valorile între paranteze drepte sunt de completat.
+`canvas/build_sections.py` generează secțiunile 2–10 și footer-ul din conținut, iar `canvas/build_pages.py` le împarte în planșe, pentru desktop și mobil. Valorile între paranteze drepte sunt de completat.
