@@ -26,11 +26,22 @@ Culorile, fonturile și proporțiile nu sunt protejate, dar imaginile demo și l
 opera autorului. Pentru un homepage „identic” cu demo-ul este nevoie de licența kitului de pe ThemeForest;
 altfel, construim un layout propriu pe acest sistem de design.
 
-## Homepage (în lucru)
+## Homepage
 
-Toate planșele stau în același canvas, alături de design system.
+Toate planșele stau în același canvas, alături de design system. Secțiunile homepage-ului și layout-ul din temă pe care îl urmează:
 
-- **Etapa 1 – header + hero + bară de încredere**: `canvas/Main.dc.html` (desktop 1440) și `canvas/Mobil.dc.html` (mobil 390).
-  Cifrele din bara de încredere sunt de exemplu, de înlocuit cu cele reale.
-- **Etapa 2 – „De ce Aerconduct”** pe layout-ul „About” din temă (verde închis, text + grilă de 4 diferențiatori + fotografie de 300 px).
-- **Etapa 3 – „Servicii”** pe layout-ul „Our Services” din temă (titlu centrat, carduri bej cu fotografie, titlu, text, link), pe 4 coloane pentru cele 8 servicii.
+| Secțiune | Layout din tema Airvora |
+|---|---|
+| Header + hero + bară de încredere | Header transparent peste hero, două coloane de 50%, contoare pe fotografie |
+| De ce Aerconduct | „About”: verde închis, grilă de 4 diferențiatori, fotografie de 300 px |
+| Servicii | „Our Services”: titlu centrat, 6 carduri bej pe 3 coloane |
+| Cum lucrăm | „Process”: fundal negru cald, 4 pași în grilă 2 × 2, număr Display |
+| Industrii | Carduri de tip blog: fotografie, titlu, un rând, link |
+| Proiecte | „Projects”: rânduri cu fotografie de fundal, card bej și 3 contoare |
+| Pentru antreprenori | „Why choose us”: fotografie cu gradient, text stânga, listă cu separatoare dreapta |
+| Zone deservite | Două coloane: text + hartă simplă SVG (secțiune fără echivalent în temă) |
+| FAQ | Acordeon cu linii de 1 px, prima întrebare deschisă |
+| CTA + formular | „Ready to get started” pe negru cald, cu formular pe card bej |
+| Footer | Footer pe fundal accent, 4 coloane, rând legal jos |
+
+`canvas/build_sections.py` generează secțiunile 2–10 și footer-ul din conținut, pentru desktop și mobil. Valorile între paranteze drepte sunt de completat.
