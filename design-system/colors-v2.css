@@ -1,0 +1,35 @@
+/* ==========================================================================
+   Paleta v2 Aerconduct – aceleași roluri ca în tema Airvora, culori construite
+   în jurul roșului și albastrului din logo. Suprascrie doar culorile din
+   airvora-tokens.css; tipografia, spațierea și componentele rămân neschimbate.
+   ========================================================================== */
+:root {
+  --color-primary:   #0C1A2B;  /* navy aproape negru: titluri, butoane secundare, fundal CTA/proces */
+  --color-secondary: #10334F;  /* albastru închis: secțiuni închise                                  */
+  --color-text:      #5B6470;  /* gri rece                                                            */
+  --color-accent:    #3EA8DE;  /* albastru brand: etichete pe închis, cifre, blocuri, footer          */
+  --color-surface:   #F3F5F7;  /* alb rece: fundalul paginii                                          */
+  --color-surface-2: #E8EDF1;  /* carduri                                                             */
+  --color-border:    #CFD6DD;
+  --color-surface-3: #DDE4EA;
+
+  --color-red:       #E02127;  /* roșu brand: butoane principale, marcajele etichetelor */
+  --color-red-dark:  #B8151B;  /* hover pe butoanele roșii                              */
+  --color-red-tint:  #FBE3E4;
+  --color-blue-dark: #1E7FB3;  /* hover pe linkuri albastre                             */
+  --color-blue-tint: #D6ECF8;
+  --color-white:     #FFFFFF;  /* text pe butoanele roșii                               */
+
+  --color-surface-a12: rgba(243, 245, 247, 0.125);
+  --color-surface-a19: rgba(243, 245, 247, 0.19);
+  --color-primary-a12: rgba(12, 26, 43, 0.125);
+  --color-primary-a31: rgba(12, 26, 43, 0.31);
+  --color-black-a19:   rgba(0, 0, 0, 0.19);
+}
+
+/* Diferențe de utilizare față de v1 */
+.btn--primary, .btn--light { background: var(--color-red); color: var(--color-white); border-color: var(--color-red); }
+.btn--primary:hover, .btn--light:hover { background: var(--color-red-dark); border-color: var(--color-red-dark); color: var(--color-white); }
+.btn--secondary { background: var(--color-primary); color: var(--color-surface); border-color: var(--color-primary); }
+.btn--secondary:hover { background: var(--color-text); border-color: var(--color-text); }
+.eyebrow::before, .on-dark .eyebrow::before { background: var(--color-red); }

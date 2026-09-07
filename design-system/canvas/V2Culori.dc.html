@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500&family=Chivo+Mono:wght@400;500&display=swap">
+  <style>
+    body { margin: 0; background: #F3F5F7; color: #5B6470; font-family: 'Plus Jakarta Sans', 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 15px; line-height: 1.5; letter-spacing: -0.4px; -webkit-font-smoothing: antialiased; }
+    a { color: #5B6470; text-decoration: none; } a:hover { color: #0C1A2B; }
+    h1, h2, h3, h4, h5, h6, p { margin: 0; }
+    h1, h2, h3, h4, h5, h6 { color: #0C1A2B; font-family: 'Plus Jakarta Sans', 'Segoe UI', Helvetica, Arial, sans-serif; font-weight: 400; }
+    h1 { font-size: 67px; line-height: 1.1; letter-spacing: -3px; }
+    h2 { font-size: 50px; line-height: 1.1; letter-spacing: -2px; }
+    h3 { font-size: 36px; line-height: 1.2; letter-spacing: -1.2px; word-spacing: 5px; }
+    h4 { font-size: 28px; line-height: 1.2; letter-spacing: -1.2px; word-spacing: 5px; }
+    h5 { font-size: 21px; line-height: 1.3; letter-spacing: -0.8px; word-spacing: 3px; font-weight: 500; }
+    h6 { font-size: 17px; line-height: 1.3; letter-spacing: -0.6px; word-spacing: 2px; font-weight: 500; }
+    .mono { font-family: 'Chivo Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace; font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: -0.3px; line-height: 1.4; }
+    .spec { font-family: 'Chivo Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace; font-size: 11px; font-weight: 400; letter-spacing: -0.2px; line-height: 1.5; color: #5B6470; text-transform: none; }
+    .sheet { width: 1440px; box-sizing: border-box; padding: 70px 80px 100px 80px; background: #F3F5F7; display: flex; flex-direction: column; gap: 100px; }
+    .sec { display: flex; flex-direction: column; gap: 30px; }
+    .sec-head { display: flex; flex-direction: column; gap: 10px; padding-bottom: 20px; border-bottom: 1px solid #CFD6DD; }
+    .eyebrow { display: flex; align-items: center; gap: 10px; color: #0C1A2B; }
+    .eyebrow-dot { width: 8px; height: 8px; background: #0C1A2B; flex: none; }
+    .eyebrow.on-dark { color: #3EA8DE; } .eyebrow.on-dark .eyebrow-dot { background: #3EA8DE; }
+    .btn { display: inline-flex; align-items: center; gap: 10px; padding: 14px 18px; border-radius: 5px; border: 1px solid transparent; font-family: 'Chivo Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: -0.3px; line-height: 1.2; cursor: pointer; white-space: nowrap; transition: background-color .4s, color .4s, border-color .4s; }
+    .btn svg { width: 14px; height: 14px; flex: none; }
+    .btn-primary { background: #0C1A2B; color: #F3F5F7; border-color: #0C1A2B; } .btn-primary:hover { background: #5B6470; border-color: #5B6470; }
+    .btn-accent { background: #3EA8DE; color: #0C1A2B; border-color: #3EA8DE; } .btn-accent:hover { background: #CFD6DD; border-color: #CFD6DD; }
+    .btn-light { background: #F3F5F7; color: #0C1A2B; border-color: #F3F5F7; } .btn-light:hover { background: #5B6470; color: #F3F5F7; border-color: #5B6470; }
+    .btn-outline { background: transparent; color: #F3F5F7; border-color: #3EA8DE; } .btn-outline:hover { background: #3EA8DE; color: #0C1A2B; }
+    .btn-link { background: transparent; color: #0C1A2B; padding: 0; border-radius: 0; } .btn-link:hover { color: #5B6470; }
+    .btn-link.on-dark { color: #3EA8DE; } .btn-link.on-dark:hover { color: #F3F5F7; }
+    .btn-header { padding: 12px 14px; } .btn-small { padding: 10px 12px; }
+    .label { display: flex; flex-direction: column; gap: 4px; }
+    .label .name { color: #0C1A2B; }
+  </style>
+</helmet>
+
+<div class="sheet">
+  <div style="display: flex; flex-direction: column; gap: 30px;">
+    <div class="eyebrow mono"><span class="eyebrow-dot" style="background: #E02127;"></span><span>Aerconduct · Design system v2 · Culori</span></div>
+    <h1 style="max-width: 900px;">Paleta v2, în jurul brandului</h1>
+    <p style="max-width: 570px;">Aceleași roluri de culoare ca în tema Airvora, dar construite în jurul roșului și albastrului din logo. Tipografia, spațierea și componentele rămân cele din v1.</p>
+    <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; padding-top: 30px; border-top: 1px solid #CFD6DD;">
+      <div class="label"><span class="spec">Sursă</span><span class="name">Roșu și albastru din logo</span></div>
+      <div class="label"><span class="spec">Ton</span><span class="name">Rece, tehnic, contrast puternic</span></div>
+      <div class="label"><span class="spec">Regulă</span><span class="name">Roșu pentru acțiune, albastru pentru accent</span></div>
+      <div class="label"><span class="spec">Planșe</span><span class="name">Homepage v2 desktop + mobil</span></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-head">
+      <div class="eyebrow mono"><span class="eyebrow-dot" style="background: #E02127;"></span><span>01 · Culorile brandului</span></div>
+      <h2>Două culori din logo</h2>
+      <p style="max-width: 570px;">Roșul este culoarea de acțiune: butoane principale, marcajele etichetelor, evidențieri. Albastrul preia rolul accentului din temă: etichete pe fundal închis, cifre, blocuri mari, footer.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px;">
+      <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 10px;">
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="height: 180px; background: #E02127;"></div>
+        <div class="label"><span class="mono" style="color: #0C1A2B;">Roșu brand</span><span class="spec">#E02127 · --color-red</span><span class="spec">Butoane principale, marcaje, evidențieri</span></div>
+      </div>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="height: 180px; background: #B8151B;"></div>
+        <div class="label"><span class="mono" style="color: #0C1A2B;">Roșu închis</span><span class="spec">#B8151B · --color-red-dark</span><span class="spec">Hover pe butoanele roșii</span></div>
+      </div>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="height: 180px; background: #FBE3E4;"></div>
+        <div class="label"><span class="mono" style="color: #0C1A2B;">Roșu deschis</span><span class="spec">#FBE3E4 · --color-red-tint</span><span class="spec">Fundal pentru mesaje, etichete de stare</span></div>
+      </div>
+      </div>
+      <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 10px;">
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="height: 180px; background: #3EA8DE;"></div>
+        <div class="label"><span class="mono" style="color: #0C1A2B;">Albastru brand</span><span class="spec">#3EA8DE · --color-accent</span><span class="spec">Etichete pe închis, cifre, blocuri, footer</span></div>
+      </div>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="height: 180px; background: #1E7FB3;"></div>
+        <div class="label"><span class="mono" style="color: #0C1A2B;">Albastru închis</span><span class="spec">#1E7FB3 · --color-blue-dark</span><span class="spec">Hover pe linkuri albastre, iconițe pe deschis</span></div>
+      </div>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="height: 180px; background: #D6ECF8;"></div>
+        <div class="label"><span class="mono" style="color: #0C1A2B;">Albastru deschis</span><span class="spec">#D6ECF8 · --color-blue-tint</span><span class="spec">Fundal pentru tag-uri, hover pe butonul accent</span></div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-head">
+      <div class="eyebrow mono"><span class="eyebrow-dot" style="background: #E02127;"></span><span>02 · Paleta completă</span></div>
+      <h2>Rolurile din temă, în culorile noi</h2>
+      <p style="max-width: 570px;">Fiecare culoare din tema Airvora are un echivalent unu-la-unu, ca homepage-ul să poată fi trecut de pe v1 pe v2 fără să se schimbe layout-ul.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px;">
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="height: 140px; background: #0C1A2B;"></div>
+        <div class="label"><span class="mono" style="color: #0C1A2B;">Primary</span><span class="spec">#0C1A2B · --color-primary · v1 #241F21</span><span class="spec">Titluri, butoane secundare, fundal CTA și proces</span></div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="height: 140px; background: #10334F;"></div>
+        <div class="label"><span class="mono" style="color: #0C1A2B;">Secondary</span><span class="spec">#10334F · --color-secondary · v1 #062D2B</span><span class="spec">Secțiuni închise: De ce Aerconduct</span></div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="height: 140px; background: #5B6470;"></div>
+        <div class="label"><span class="mono" style="color: #0C1A2B;">Text</span><span class="spec">#5B6470 · --color-text · v1 #5E5A5C</span><span class="spec">Paragrafe, linkuri</span></div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="height: 140px; background: #3EA8DE;"></div>
+        <div class="label"><span class="mono" style="color: #0C1A2B;">Accent</span><span class="spec">#3EA8DE · --color-accent · v1 #F6F36F</span><span class="spec">Etichete pe închis, cifre, footer</span></div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="height: 140px; background: #F3F5F7; border: 1px solid #CFD6DD; box-sizing: border-box;"></div>
+        <div class="label"><span class="mono" style="color: #0C1A2B;">Surface</span><span class="spec">#F3F5F7 · --color-surface · v1 #F2EFE9</span><span class="spec">Fundalul paginii, text pe închis</span></div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="height: 140px; background: #E8EDF1;"></div>
+        <div class="label"><span class="mono" style="color: #0C1A2B;">Surface 2</span><span class="spec">#E8EDF1 · --color-surface-2 · v1 #ECE6DF</span><span class="spec">Carduri, benzi alternative</span></div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="height: 140px; background: #CFD6DD;"></div>
+        <div class="label"><span class="mono" style="color: #0C1A2B;">Border</span><span class="spec">#CFD6DD · --color-border · v1 #D8D4CF</span><span class="spec">Linii, separatoare</span></div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="height: 140px; background: #DDE4EA;"></div>
+        <div class="label"><span class="mono" style="color: #0C1A2B;">Surface 3</span><span class="spec">#DDE4EA · --color-surface-3 · v1 #DFDACE</span><span class="spec">Hover pe carduri, blocuri secundare</span></div>
+      </div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; padding-top: 10px;">
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="height: 60px; background: #10334F; display: flex; align-items: center; padding: 0 20px;"><div style="width: 100%; height: 1px; background: rgba(243, 245, 247, 0.125);"></div></div>
+        <div class="label"><span class="spec">Surface 12% · rgba(243,245,247,.125)</span><span class="spec">Separator pe fundal închis</span></div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="height: 60px; background: #F3F5F7; border: 1px solid #CFD6DD; box-sizing: border-box; display: flex; align-items: center; padding: 0 20px;"><div style="width: 100%; height: 1px; background: rgba(12, 26, 43, 0.125);"></div></div>
+        <div class="label"><span class="spec">Primary 12% · rgba(12,26,43,.125)</span><span class="spec">Separator subtil pe deschis</span></div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="height: 60px; background: rgba(12, 26, 43, 0.31);"></div>
+        <div class="label"><span class="spec">Primary 31% · rgba(12,26,43,.31)</span><span class="spec">Overlay pe fotografii</span></div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="height: 60px; background: #FFFFFF; border: 1px solid #CFD6DD; box-sizing: border-box;"></div>
+        <div class="label"><span class="spec">White · #FFFFFF</span><span class="spec">Text pe butoanele roșii, câmpuri de formular</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-head">
+      <div class="eyebrow mono"><span class="eyebrow-dot" style="background: #E02127;"></span><span>03 · Combinații de fundal</span></div>
+      <h2>Cum se așază culorile</h2>
+      <p style="max-width: 570px;">Marcajul etichetei este întotdeauna roșu. Pe fundal închis, textul etichetei și cifrele sunt albastre; pe deschis, navy.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px;">
+      <div style="background: #F3F5F7; border: 1px solid #CFD6DD; box-sizing: border-box; padding: 30px 20px; display: flex; flex-direction: column; gap: 10px; min-height: 200px;">
+        <div class="mono" style="display: flex; align-items: center; gap: 10px; color: #0C1A2B;"><span style="width: 8px; height: 8px; background: #E02127; flex: none;"></span><span>Deschis</span></div>
+        <h5 style="color: #0C1A2B;">Titlu pe fundal deschis</h5>
+        <p style="color: #5B6470;">Text în gri rece, titluri în navy.</p>
+      </div>
+      <div style="background: #E8EDF1; padding: 30px 20px; display: flex; flex-direction: column; gap: 10px; min-height: 200px;">
+        <div class="mono" style="display: flex; align-items: center; gap: 10px; color: #0C1A2B;"><span style="width: 8px; height: 8px; background: #E02127; flex: none;"></span><span>Card</span></div>
+        <h5 style="color: #0C1A2B;">Titlu pe card</h5>
+        <p style="color: #5B6470;">Aceleași culori de text ca pe deschis.</p>
+      </div>
+      <div style="background: #10334F; padding: 30px 20px; display: flex; flex-direction: column; gap: 10px; min-height: 200px;">
+        <div class="mono" style="display: flex; align-items: center; gap: 10px; color: #3EA8DE;"><span style="width: 8px; height: 8px; background: #E02127; flex: none;"></span><span>Închis</span></div>
+        <h5 style="color: #F3F5F7;">Titlu pe albastru închis</h5>
+        <p style="color: #CFD6DD;">Eticheta în albastru brand, text în border.</p>
+      </div>
+      <div style="background: #3EA8DE; padding: 30px 20px; display: flex; flex-direction: column; gap: 10px; min-height: 200px;">
+        <div class="mono" style="display: flex; align-items: center; gap: 10px; color: #0C1A2B;"><span style="width: 8px; height: 8px; background: #E02127; flex: none;"></span><span>Accent</span></div>
+        <h5 style="color: #0C1A2B;">Titlu pe bloc albastru</h5>
+        <p style="color: #0C1A2B;">Tot textul în navy, fără gri.</p>
+      </div>
+      <div style="background: #0C1A2B; padding: 30px 20px; display: flex; flex-direction: column; gap: 10px; min-height: 200px;">
+        <div class="mono" style="display: flex; align-items: center; gap: 10px; color: #3EA8DE;"><span style="width: 8px; height: 8px; background: #E02127; flex: none;"></span><span>Navy</span></div>
+        <h5 style="color: #F3F5F7;">Titlu pe navy</h5>
+        <p style="color: #CFD6DD;">Linkuri în border, hover în surface.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-head">
+      <div class="eyebrow mono"><span class="eyebrow-dot" style="background: #E02127;"></span><span>04 · Butoane și cifre</span></div>
+      <h2>Roșu pentru acțiune</h2>
+      <p style="max-width: 570px;">Butonul principal este roșu pe orice fundal. Butonul secundar rămâne navy pe deschis și contur pe închis. Cifrele mari sunt albastre.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px;">
+      <div style="background: #F3F5F7; border: 1px solid #CFD6DD; box-sizing: border-box; padding: 30px; display: flex; flex-direction: column; gap: 20px;">
+        <div class="spec">Pe fundal deschis</div>
+        <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+          <a class="btn" href="#" style="background: #E02127; color: #FFFFFF; padding: 14px 18px; border: 0;"><span>Cere ofertă</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+          <a class="btn" href="#" style="background: #B8151B; color: #FFFFFF; padding: 14px 18px; border: 0;"><span>Cere ofertă</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+          <span class="spec">Principal · hover: roșu închis</span>
+        </div>
+        <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+          <a class="btn" href="#" style="background: #0C1A2B; color: #F3F5F7; padding: 14px 18px; border: 0;"><span>Toate serviciile</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+          <a class="btn" href="#" style="background: #5B6470; color: #F3F5F7; padding: 14px 18px; border: 0;"><span>Toate serviciile</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+          <span class="spec">Secundar · hover: fundal Text</span>
+        </div>
+        <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+          <a class="btn" href="#" style="background: transparent; color: #0C1A2B; padding: 0; border: 0;"><span>Află mai mult</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+          <a class="btn" href="#" style="background: transparent; color: #1E7FB3; padding: 0; border: 0;"><span>Află mai mult</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+          <span class="spec">Link · hover: albastru închis</span>
+        </div>
+      </div>
+      <div style="background: #10334F; padding: 30px; display: flex; flex-direction: column; gap: 20px;">
+        <div class="spec" style="color: #CFD6DD;">Pe fundal închis</div>
+        <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+          <a class="btn" href="#" style="background: #E02127; color: #FFFFFF; padding: 14px 18px; border: 0;"><span>Consultanță gratuită</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+          <a class="btn" href="#" style="background: #B8151B; color: #FFFFFF; padding: 14px 18px; border: 0;"><span>Consultanță gratuită</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+          <span class="spec" style="color: #CFD6DD;">Principal · hover: roșu închis</span>
+        </div>
+        <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+          <a class="btn" href="#" style="background: transparent; color: #3EA8DE; padding: 13px 17px; border: 1px solid rgba(243, 245, 247, 0.19);"><span>Vezi serviciile</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+          <a class="btn" href="#" style="background: #3EA8DE; color: #0C1A2B; padding: 13px 17px; border: 1px solid #3EA8DE;"><span>Vezi serviciile</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+          <span class="spec" style="color: #CFD6DD;">Contur · hover: fundal albastru</span>
+        </div>
+        <div style="display: flex; gap: 30px; align-items: flex-end; flex-wrap: wrap; padding-top: 10px;">
+          <div style="font-size: 90px; line-height: 1; letter-spacing: -3px; color: #3EA8DE;">48<span style="font-size: 50px; letter-spacing: -2px;">h</span></div>
+          <div class="mono" style="display: flex; align-items: center; gap: 10px; color: #3EA8DE; padding-bottom: 14px;"><span style="width: 8px; height: 8px; background: #E02127; flex: none;"></span><span>Etichetă pe închis</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-head">
+      <div class="eyebrow mono"><span class="eyebrow-dot" style="background: #E02127;"></span><span>05 · Token-uri</span></div>
+      <h2>Variabile CSS</h2>
+    </div>
+    <div style="background: #0C1A2B; padding: 30px; font-family: 'Chivo Mono', Menlo, Consolas, monospace; font-size: 12px; line-height: 1.7; color: #F3F5F7; white-space: pre; overflow-x: auto;">:root {
+  --color-primary:   #0C1A2B;   --color-secondary: #10334F;
+  --color-text:      #5B6470;   --color-accent:    #3EA8DE;
+  --color-surface:   #F3F5F7;   --color-surface-2: #E8EDF1;
+  --color-border:    #CFD6DD;   --color-surface-3: #DDE4EA;
+  --color-red:       #E02127;   --color-red-dark:  #B8151B;   --color-red-tint:  #FBE3E4;
+  --color-blue-dark: #1E7FB3;   --color-blue-tint: #D6ECF8;   --color-white:     #FFFFFF;
+  --color-surface-a12: rgba(243, 245, 247, 0.125);   --color-primary-a12: rgba(12, 26, 43, 0.125);
+  --color-primary-a31: rgba(12, 26, 43, 0.31);        --color-black-a19:   rgba(0, 0, 0, 0.19);
+}</div>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

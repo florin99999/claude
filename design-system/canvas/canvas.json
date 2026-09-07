@@ -79,6 +79,78 @@
       "y": 0,
       "w": 1440,
       "h": 6650
+    },
+    {
+      "file": "V2Culori.dc.html",
+      "title": "Design system v2 · Culori brand",
+      "x": 5320,
+      "y": 0,
+      "w": 1440,
+      "h": 3680
+    },
+    {
+      "file": "V2Home.dc.html",
+      "title": "Homepage v2 · Desktop 1/3",
+      "x": 6880,
+      "y": 0,
+      "w": 1440,
+      "h": 3340
+    },
+    {
+      "file": "V2HomeB.dc.html",
+      "title": "Homepage v2 · Desktop 2/3",
+      "x": 6880,
+      "y": 3460,
+      "w": 1440,
+      "h": 4730
+    },
+    {
+      "file": "V2HomeC.dc.html",
+      "title": "Homepage v2 · Desktop 3/3",
+      "x": 6880,
+      "y": 8310,
+      "w": 1440,
+      "h": 3880
+    },
+    {
+      "file": "V2Mobil.dc.html",
+      "title": "Homepage v2 · Mobil 1/5",
+      "x": 8440,
+      "y": 0,
+      "w": 390,
+      "h": 3010
+    },
+    {
+      "file": "V2MobilB.dc.html",
+      "title": "Homepage v2 · Mobil 2/5",
+      "x": 8440,
+      "y": 3130,
+      "w": 390,
+      "h": 4800
+    },
+    {
+      "file": "V2MobilC.dc.html",
+      "title": "Homepage v2 · Mobil 3/5",
+      "x": 8440,
+      "y": 8050,
+      "w": 390,
+      "h": 5340
+    },
+    {
+      "file": "V2MobilD.dc.html",
+      "title": "Homepage v2 · Mobil 4/5",
+      "x": 8440,
+      "y": 13510,
+      "w": 390,
+      "h": 2860
+    },
+    {
+      "file": "V2MobilE.dc.html",
+      "title": "Homepage v2 · Mobil 5/5",
+      "x": 8440,
+      "y": 16490,
+      "w": 390,
+      "h": 3320
     }
   ],
   "annotations": [
@@ -95,6 +167,13 @@
       "y": -170,
       "w": 560,
       "text": "Design system extras din stilurile globale ale temei Airvora (Elementor kit): paletă, tipografie, spațiere, forme și componente. Orice secțiune nouă a homepage-ului se construiește din aceste token-uri."
+    },
+    {
+      "id": "v2",
+      "x": 5320,
+      "y": -190,
+      "w": 620,
+      "text": "V2: aceeași structură și tipografie, doar culorile schimbate. Paleta este construită în jurul roșului (#E02127) și albastrului (#3EA8DE) din logo: roșu pentru butoanele principale și marcaje, albastru pentru etichete pe închis, cifre și footer.\nHomepage v2 este o copie a homepage-ului v1 pe noile culori."
     }
   ],
   "launch": {

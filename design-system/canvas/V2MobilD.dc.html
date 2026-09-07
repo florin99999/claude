@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500&family=Chivo+Mono:wght@500&display=swap">
+  <style>
+    body { margin: 0; background: #0C1A2B; color: #5B6470; font-family: 'Plus Jakarta Sans', 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 15px; line-height: 1.5; letter-spacing: -0.4px; -webkit-font-smoothing: antialiased; }
+    a { color: #F3F5F7; text-decoration: none; } a:hover { color: #3EA8DE; }
+    h1, p { margin: 0; }
+    .mono { font-family: 'Chivo Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace; font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: -0.3px; line-height: 1.4; }
+    .btn { display: inline-flex; align-items: center; gap: 10px; border-radius: 5px; font-family: 'Chivo Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: -0.3px; line-height: 1.2; white-space: nowrap; cursor: pointer; transition: background-color .4s, color .4s, border-color .4s; }
+    .btn svg { width: 14px; height: 14px; flex: none; }
+    .btn-light { background: #E02127; color: #FFFFFF; padding: 14px 18px; border: 0; }
+    .btn-light:hover { background: #B8151B; color: #FFFFFF; }
+    .btn-outline { background: transparent; color: #3EA8DE; padding: 13px 17px; border: 1px solid rgba(243, 245, 247, 0.19); }
+    .btn-outline:hover { background: #3EA8DE; color: #0C1A2B; border-color: #3EA8DE; }
+    .btn-header { padding: 12px 14px; }
+    .nav a { display: block; padding: 8px 15px; color: #CFD6DD; }
+    .nav a:hover { color: #3EA8DE; }
+    .nav a.active { color: #3EA8DE; }
+  </style>
+</helmet>
+<div style="width: 390px; position: relative; background: #F3F5F7;">
+  <!-- SECTIUNEA 7: Pentru antreprenori (layout "Why Choose Us" din tema) -->
+  <section style="position: relative; padding: 70px 10px; display: flex; flex-direction: column; gap: 30px; align-items: flex-end; overflow: hidden;">
+    <img src="parteneri-bg.jpg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; ">
+    <div style="position: absolute; inset: 0; background-image: linear-gradient(180deg, rgba(12, 26, 43, 0.31) 0%, #0C1A2B 100%);"></div>
+    <div style="position: relative; width: 100%; display: flex; flex-direction: column; gap: 20px;">
+      <div class="mono" style="display: flex; align-items: center; gap: 10px; color: #F3F5F7;"><span style="width: 9px; height: 9px; background: #E02127; flex: none;"></span><span>Pentru antreprenori și firme de instalații</span></div>
+      <h2 style="color: #F3F5F7; font-size: 32px; letter-spacing: -1.2px; font-weight: 400; line-height: 1.1; margin: 0; text-wrap: pretty; max-width: 700px;">Ai nevoie de o echipă de montaj tubulatură pe șantierul tău?</h2>
+      <p style="color: #CFD6DD; max-width: 570px;">Lucrăm ca subcontractor pentru antreprenori generali și firme de instalații care au proiectul, dar nu au echipa. Preluăm partea de tubulatură integral – material, confecție, montaj, documentație – și ne integrăm în graficul tău de execuție. Disponibili pentru lucrări în toată țara, cu mobilizare rapidă în Moldova.</p>
+      <div style="margin-top: 10px;"><a class="btn" href="/parteneri/" style="background: #E02127; color: #FFFFFF; padding: 14px 18px; border: 0; "><span>Discută cu noi despre proiectul tău</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a></div>
+    </div>
+    <div style="position: relative; width: 100%; display: flex; flex-direction: column;">
+        <div style="display: flex; gap: 20px; align-items: flex-start; padding: 20px 0;">
+          <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#3EA8DE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display: block; flex: none;"><circle cx="12" cy="12" r="9"></circle><path d="M8 12l3 3 5-6"></path></svg>
+          <div style="display: flex; flex-direction: column; gap: 6px;">
+            <h3 style="color: #F3F5F7; font-size: 21px; font-weight: 500; line-height: 1.3; letter-spacing: -0.8px; margin: 0;">Ofertă pe ml sau pe proiect</h3>
+            <p style="color: #CFD6DD;">Preț transparent, calculat pe metru liniar sau pe întregul pachet de tubulatură.</p>
+          </div>
+        </div>
+        <div style="display: flex; gap: 20px; align-items: flex-start; padding: 20px 0; border-top: 1px solid rgba(238, 238, 238, 0.19);">
+          <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#3EA8DE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display: block; flex: none;"><circle cx="12" cy="12" r="9"></circle><path d="M8 12l3 3 5-6"></path></svg>
+          <div style="display: flex; flex-direction: column; gap: 6px;">
+            <h3 style="color: #F3F5F7; font-size: 21px; font-weight: 500; line-height: 1.3; letter-spacing: -0.8px; margin: 0;">Echipe de [X] montatori</h3>
+            <p style="color: #CFD6DD;">Formații complete, dimensionate după graficul tău de execuție.</p>
+          </div>
+        </div>
+        <div style="display: flex; gap: 20px; align-items: flex-start; padding: 20px 0; border-top: 1px solid rgba(238, 238, 238, 0.19);">
+          <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#3EA8DE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display: block; flex: none;"><circle cx="12" cy="12" r="9"></circle><path d="M8 12l3 3 5-6"></path></svg>
+          <div style="display: flex; flex-direction: column; gap: 6px;">
+            <h3 style="color: #F3F5F7; font-size: 21px; font-weight: 500; line-height: 1.3; letter-spacing: -0.8px; margin: 0;">Autoutilitare și scule proprii</h3>
+            <p style="color: #CFD6DD;">Venim echipați: transport, scule, consumabile și utilaje de ridicat.</p>
+          </div>
+        </div>
+        <div style="display: flex; gap: 20px; align-items: flex-start; padding: 20px 0; border-top: 1px solid rgba(238, 238, 238, 0.19);">
+          <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#3EA8DE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display: block; flex: none;"><circle cx="12" cy="12" r="9"></circle><path d="M8 12l3 3 5-6"></path></svg>
+          <div style="display: flex; flex-direction: column; gap: 6px;">
+            <h3 style="color: #F3F5F7; font-size: 21px; font-weight: 500; line-height: 1.3; letter-spacing: -0.8px; margin: 0;">Asigurare RC profesională [dacă există]</h3>
+            <p style="color: #CFD6DD;">Acoperire pentru lucrările executate pe șantierul tău.</p>
+          </div>
+        </div>
+    </div>
+  </section>
+  <!-- SECTIUNEA 8: Zone deservite (doua coloane: text + harta simpla) -->
+  <section style="background: #E8EDF1; padding: 70px 10px; display: flex; flex-direction: column; gap: 30px; align-items: center;">
+    <div style="width: 100%; display: flex; flex-direction: column; gap: 20px;">
+      <div class="mono" style="display: flex; align-items: center; gap: 10px; color: #0C1A2B;"><span style="width: 9px; height: 9px; background: #E02127; flex: none;"></span><span>Zone deservite</span></div>
+      <h2 style="color: #0C1A2B; font-size: 32px; letter-spacing: -1.2px; font-weight: 400; line-height: 1.1; margin: 0; text-wrap: pretty; max-width: 600px;">Montaj tubulatură de ventilație în Moldova și în toată România</h2>
+      <p style="max-width: 570px;">Suntem în comuna Tămășeni, județul Neamț, la sub o oră de Iași, Bacău și Roman. Executăm lucrări curent în Neamț, Iași, Bacău, Suceava, Botoșani, Vaslui și Galați, și ne deplasăm pentru proiecte în orice județ.</p>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 30px; margin-top: 10px; max-width: 480px;"><a href="/zone/piatra-neamt/" style="display: flex; align-items: center; gap: 10px; color: #0C1A2B;"><span style="width: 8px; height: 8px; background: #0C1A2B; flex: none;"></span><span>Piatra Neamț</span></a><a href="/zone/roman/" style="display: flex; align-items: center; gap: 10px; color: #0C1A2B;"><span style="width: 8px; height: 8px; background: #0C1A2B; flex: none;"></span><span>Roman</span></a><a href="/zone/iasi/" style="display: flex; align-items: center; gap: 10px; color: #0C1A2B;"><span style="width: 8px; height: 8px; background: #0C1A2B; flex: none;"></span><span>Iași</span></a><a href="/zone/bacău/" style="display: flex; align-items: center; gap: 10px; color: #0C1A2B;"><span style="width: 8px; height: 8px; background: #0C1A2B; flex: none;"></span><span>Bacău</span></a><a href="/zone/suceava/" style="display: flex; align-items: center; gap: 10px; color: #0C1A2B;"><span style="width: 8px; height: 8px; background: #0C1A2B; flex: none;"></span><span>Suceava</span></a><a href="/zone/botosani/" style="display: flex; align-items: center; gap: 10px; color: #0C1A2B;"><span style="width: 8px; height: 8px; background: #0C1A2B; flex: none;"></span><span>Botoșani</span></a><a href="/zone/vaslui/" style="display: flex; align-items: center; gap: 10px; color: #0C1A2B;"><span style="width: 8px; height: 8px; background: #0C1A2B; flex: none;"></span><span>Vaslui</span></a><a href="/zone/galati/" style="display: flex; align-items: center; gap: 10px; color: #0C1A2B;"><span style="width: 8px; height: 8px; background: #0C1A2B; flex: none;"></span><span>Galați</span></a><a href="/zone/bucuresti/" style="display: flex; align-items: center; gap: 10px; color: #0C1A2B;"><span style="width: 8px; height: 8px; background: #0C1A2B; flex: none;"></span><span>București</span></a><a href="/zone/alte-orase/" style="display: flex; align-items: center; gap: 10px; color: #0C1A2B;"><span style="width: 8px; height: 8px; background: #0C1A2B; flex: none;"></span><span>[alte orașe]</span></a></div>
+    </div>
+    <div style="width: 100%; background: #0C1A2B; padding: 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 20px;">
+      <svg viewBox="0 0 330 234" width="330" height="234" style="display: block; max-width: 100%; height: auto;" role="img" aria-label="Harta României cu zonele deservite">
+<path d="M3.7,108.5 L18.5,86.1 L32.0,71.7 L45.5,47.8 L62.3,28.7 L69.0,19.1 L92.6,21.5 L112.8,19.1 L129.6,21.5 L149.8,21.5 L163.3,31.1 L176.8,23.9 L197.0,21.5 L207.1,9.6 L217.2,6.2 L230.7,19.1 L240.8,38.3 L254.2,57.4 L267.7,81.3 L271.1,105.2 L267.7,133.9 L271.1,141.1 L291.3,148.2 L308.1,143.4 L321.6,153.0 L318.2,172.1 L294.6,191.3 L284.5,215.2 L284.5,222.3 L264.3,220.0 L247.5,210.4 L230.7,205.6 L213.8,208.0 L190.3,224.7 L176.8,228.6 L149.8,224.7 L122.9,220.0 L102.7,220.0 L85.9,200.8 L75.8,186.5 L85.9,181.7 L69.0,186.5 L48.8,172.1 L42.1,153.0 L28.6,148.2 L21.9,129.1 L18.5,114.8 Z" fill="#10334F" stroke="#F3F5F7" stroke-width="1"></path>
+<path d="M197.0,9.6 L217.2,6.2 L230.7,19.1 L240.8,38.3 L254.2,57.4 L267.7,81.3 L271.1,105.2 L267.7,133.9 L271.1,141.1 L250.9,143.4 L230.7,138.7 L210.5,119.5 L197.0,95.6 L193.6,66.9 L183.5,38.3 L176.8,23.9 L197.0,21.5 Z" fill="#3EA8DE" fill-opacity="0.22" stroke="#3EA8DE" stroke-width="1"></path>
+<rect x="222.3" y="63.3" width="12" height="12" fill="#3EA8DE"></rect><text x="238.3" y="61.3" font-family="Chivo Mono, Menlo, monospace" font-size="11" font-weight="500" fill="#3EA8DE">TĂMĂȘENI · SEDIU</text>
+<circle cx="209.4" cy="70.3" r="3.5" fill="#F3F5F7"></circle><text x="201.4" y="74.3" text-anchor="end" font-family="Chivo Mono, Menlo, monospace" font-size="11" font-weight="500" fill="#F3F5F7">PIATRA NEAMȚ</text>
+<circle cx="250.9" cy="59.3" r="3.5" fill="#F3F5F7"></circle><text x="258.9" y="63.3" text-anchor="start" font-family="Chivo Mono, Menlo, monospace" font-size="11" font-weight="500" fill="#F3F5F7">IAȘI</text>
+<circle cx="227.3" cy="87.5" r="3.5" fill="#F3F5F7"></circle><text x="235.3" y="91.5" text-anchor="start" font-family="Chivo Mono, Menlo, monospace" font-size="11" font-weight="500" fill="#F3F5F7">BACĂU</text>
+<circle cx="205.4" cy="35.9" r="3.5" fill="#F3F5F7"></circle><text x="197.4" y="39.9" text-anchor="end" font-family="Chivo Mono, Menlo, monospace" font-size="11" font-weight="500" fill="#F3F5F7">SUCEAVA</text>
+<circle cx="219.6" cy="31.1" r="3.5" fill="#F3F5F7"></circle><text x="227.6" y="35.1" text-anchor="start" font-family="Chivo Mono, Menlo, monospace" font-size="11" font-weight="500" fill="#F3F5F7">BOTOȘANI</text>
+<circle cx="255.2" cy="84.2" r="3.5" fill="#F3F5F7"></circle><text x="263.2" y="88.2" text-anchor="start" font-family="Chivo Mono, Menlo, monospace" font-size="11" font-weight="500" fill="#F3F5F7">VASLUI</text>
+<circle cx="266.0" cy="141.5" r="3.5" fill="#F3F5F7"></circle><text x="274.0" y="145.5" text-anchor="start" font-family="Chivo Mono, Menlo, monospace" font-size="11" font-weight="500" fill="#F3F5F7">GALAȚI</text>
+<circle cx="200.4" cy="189.8" r="3.5" fill="#F3F5F7"></circle><text x="192.4" y="193.8" text-anchor="end" font-family="Chivo Mono, Menlo, monospace" font-size="11" font-weight="500" fill="#F3F5F7">BUCUREȘTI</text>
+</svg>
+      <div class="mono" style="display: flex; gap: 20px; flex-wrap: wrap; color: #CFD6DD;"><span style="display: flex; align-items: center; gap: 8px;"><span style="width: 10px; height: 10px; background: #3EA8DE; opacity: 0.5;"></span>Mobilizare în aceeași zi</span><span style="display: flex; align-items: center; gap: 8px;"><span style="width: 10px; height: 10px; background: #10334F; border: 1px solid #F3F5F7;"></span>Deplasare la cerere</span></div>
+    </div>
+  </section>
+  <!-- SECTIUNEA 9: FAQ (layout "Answers to Common Questions" din tema) -->
+  <section style="background: #F3F5F7; padding: 70px 10px; display: flex; flex-direction: column; gap: 20px;">
+    <div class="mono" style="display: flex; align-items: center; gap: 10px; color: #0C1A2B;"><span style="width: 9px; height: 9px; background: #E02127; flex: none;"></span><span>Întrebări frecvente</span></div>
+    <h2 style="color: #0C1A2B; font-size: 32px; letter-spacing: -1.2px; font-weight: 400; line-height: 1.1; margin: 0; text-wrap: pretty; max-width: 550px; margin-bottom: 20px;">Întrebări frecvente</h2>
+    <div style="display: flex; flex-direction: column;">
+      <div style="border-bottom: 1px solid #CFD6DD; display: flex; flex-direction: column;">
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: 40px; padding: 12px 0 22px 0;">
+          <h3 style="color: #0C1A2B; font-size: 19px; font-weight: 500; line-height: 1.3; letter-spacing: -0.8px; margin: 0;">Ce tip de tubulatură e potrivit pentru proiectul meu?</h3>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5B6470" stroke-width="2" stroke-linecap="round" style="flex: none;"><path d="M5 12h14"></path></svg>
+        </div><p style="max-width: 100%; padding: 0 30px 30px 0;">Depinde de destinație: zincată pentru hale și trasee mari, ALP pentru spații unde contează igiena și izolația, inox pentru alimentar și bucătării, rezistentă la foc pentru desfumare. Îți recomandăm soluția după ce vedem planul.</p>
+      </div>
+      <div style="border-bottom: 1px solid #CFD6DD; display: flex; flex-direction: column;">
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: 40px; padding: 22px 0;">
+          <h3 style="color: #0C1A2B; font-size: 19px; font-weight: 500; line-height: 1.3; letter-spacing: -0.8px; margin: 0;">Cât costă tubulatura de ventilație?</h3>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5B6470" stroke-width="2" stroke-linecap="round" style="flex: none;"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg>
+        </div>
+      </div>
+      <div style="border-bottom: 1px solid #CFD6DD; display: flex; flex-direction: column;">
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: 40px; padding: 22px 0;">
+          <h3 style="color: #0C1A2B; font-size: 19px; font-weight: 500; line-height: 1.3; letter-spacing: -0.8px; margin: 0;">Lucrați și în afara Moldovei?</h3>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5B6470" stroke-width="2" stroke-linecap="round" style="flex: none;"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg>
+        </div>
+      </div>
+      <div style="border-bottom: 1px solid #CFD6DD; display: flex; flex-direction: column;">
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: 40px; padding: 22px 0;">
+          <h3 style="color: #0C1A2B; font-size: 19px; font-weight: 500; line-height: 1.3; letter-spacing: -0.8px; margin: 0;">Puteți lucra ca subcontractor?</h3>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5B6470" stroke-width="2" stroke-linecap="round" style="flex: none;"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg>
+        </div>
+      </div>
+      <div style="border-bottom: 1px solid #CFD6DD; display: flex; flex-direction: column;">
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: 40px; padding: 22px 0;">
+          <h3 style="color: #0C1A2B; font-size: 19px; font-weight: 500; line-height: 1.3; letter-spacing: -0.8px; margin: 0;">Oferiți și materialul, sau doar manopera?</h3>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5B6470" stroke-width="2" stroke-linecap="round" style="flex: none;"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg>
+        </div>
+      </div>
+      <div style="border-bottom: 1px solid #CFD6DD; display: flex; flex-direction: column;">
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: 40px; padding: 22px 0;">
+          <h3 style="color: #0C1A2B; font-size: 19px; font-weight: 500; line-height: 1.3; letter-spacing: -0.8px; margin: 0;">Faceți teste de etanșeitate?</h3>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5B6470" stroke-width="2" stroke-linecap="round" style="flex: none;"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</x-dc>
+</body>
+</html>
