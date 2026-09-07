@@ -6,13 +6,13 @@
       "x": 0,
       "y": 0,
       "w": 1440,
-      "h": 3340
+      "h": 3130
     },
     {
       "file": "HomeB.dc.html",
       "title": "Homepage · Desktop 2/3 · Proces, Industrii, Proiecte",
       "x": 0,
-      "y": 3460,
+      "y": 3250,
       "w": 1440,
       "h": 4730
     },
@@ -20,7 +20,7 @@
       "file": "HomeC.dc.html",
       "title": "Homepage · Desktop 3/3 · Antreprenori, Zone, FAQ, CTA, Footer",
       "x": 0,
-      "y": 8310,
+      "y": 8100,
       "w": 1440,
       "h": 3880
     },
@@ -30,21 +30,21 @@
       "x": 1560,
       "y": 0,
       "w": 390,
-      "h": 3010
+      "h": 2990
     },
     {
       "file": "MobilB.dc.html",
       "title": "Homepage · Mobil 2/5",
       "x": 1560,
-      "y": 3130,
+      "y": 3110,
       "w": 390,
-      "h": 4800
+      "h": 4320
     },
     {
       "file": "MobilC.dc.html",
       "title": "Homepage · Mobil 3/5",
       "x": 1560,
-      "y": 8050,
+      "y": 7550,
       "w": 390,
       "h": 5340
     },
@@ -52,7 +52,7 @@
       "file": "MobilD.dc.html",
       "title": "Homepage · Mobil 4/5",
       "x": 1560,
-      "y": 13510,
+      "y": 13010,
       "w": 390,
       "h": 2860
     },
@@ -60,7 +60,7 @@
       "file": "MobilE.dc.html",
       "title": "Homepage · Mobil 5/5",
       "x": 1560,
-      "y": 16490,
+      "y": 15990,
       "w": 390,
       "h": 3320
     },
@@ -86,7 +86,7 @@
       "x": 5320,
       "y": 0,
       "w": 1440,
-      "h": 3680
+      "h": 3640
     },
     {
       "file": "V2Home.dc.html",
@@ -94,13 +94,13 @@
       "x": 6880,
       "y": 0,
       "w": 1440,
-      "h": 3340
+      "h": 3130
     },
     {
       "file": "V2HomeB.dc.html",
       "title": "Homepage v2 · Desktop 2/3",
       "x": 6880,
-      "y": 3460,
+      "y": 3250,
       "w": 1440,
       "h": 4730
     },
@@ -108,7 +108,7 @@
       "file": "V2HomeC.dc.html",
       "title": "Homepage v2 · Desktop 3/3",
       "x": 6880,
-      "y": 8310,
+      "y": 8100,
       "w": 1440,
       "h": 3880
     },
@@ -118,21 +118,21 @@
       "x": 8440,
       "y": 0,
       "w": 390,
-      "h": 3010
+      "h": 2990
     },
     {
       "file": "V2MobilB.dc.html",
       "title": "Homepage v2 · Mobil 2/5",
       "x": 8440,
-      "y": 3130,
+      "y": 3110,
       "w": 390,
-      "h": 4800
+      "h": 4320
     },
     {
       "file": "V2MobilC.dc.html",
       "title": "Homepage v2 · Mobil 3/5",
       "x": 8440,
-      "y": 8050,
+      "y": 7550,
       "w": 390,
       "h": 5340
     },
@@ -140,7 +140,7 @@
       "file": "V2MobilD.dc.html",
       "title": "Homepage v2 · Mobil 4/5",
       "x": 8440,
-      "y": 13510,
+      "y": 13010,
       "w": 390,
       "h": 2860
     },
@@ -148,7 +148,7 @@
       "file": "V2MobilE.dc.html",
       "title": "Homepage v2 · Mobil 5/5",
       "x": 8440,
-      "y": 16490,
+      "y": 15990,
       "w": 390,
       "h": 3320
     }

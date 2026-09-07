@@ -28,7 +28,7 @@
 }
 
 /* Diferențe de utilizare față de v1: roșul apare doar pe butoanele de cerere de ofertă,
-   footer-ul este pe albastru deschis; etichetele și celelalte butoane urmează tema. */
+   footer-ul este pe navy; etichetele și celelalte butoane urmează tema. */
 .btn--offer { background: var(--color-red); color: var(--color-white); border-color: var(--color-red); }
 .btn--offer:hover { background: var(--color-red-dark); border-color: var(--color-red-dark); color: var(--color-white); }
-.site-footer { background: var(--color-blue-tint); }
+.site-footer { background: var(--color-primary); }

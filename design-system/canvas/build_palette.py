@@ -36,7 +36,7 @@ body=f'''
     <div class="sec-head">
       {eb('01 · Culorile brandului')}
       <h2>Două culori din logo</h2>
-      <p style="max-width: 570px;">Roșul apare rar și cu un singur sens: cererea de ofertă (butonul din header, butonul principal din hero, trimiterea formularului). Albastrul preia rolul accentului din temă: etichete și cifre pe fundal închis, blocuri, footer în varianta deschisă.</p>
+      <p style="max-width: 570px;">Roșul apare rar și cu un singur sens: cererea de ofertă (butonul din header, butonul principal din hero, trimiterea formularului). Albastrul preia rolul accentului din temă: etichete și cifre pe fundal închis, blocuri, blocuri și hartă.</p>
     </div>
     <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px;">
       <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 10px;">
@@ -47,7 +47,7 @@ body=f'''
       <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 10px;">
         {sw(V['accent'],'Albastru brand','--color-accent','Etichete pe închis, cifre, blocuri, hartă',h=180)}
         {sw(V['blue_dark'],'Albastru închis','--color-blue-dark','Hover pe linkuri, iconițe pe deschis',h=180)}
-        {sw(V['blue_tint'],'Albastru deschis','--color-blue-tint','Footer, tag-uri, fundal secundar',h=180)}
+        {sw(V['blue_tint'],'Albastru deschis','--color-blue-tint','Tag-uri, fundal secundar, hover',h=180)}
       </div>
     </div>
   </div>
@@ -98,8 +98,8 @@ body=f'''
       {combo(V['surface'], V['primary'], V['primary'], V['primary'], V['text'], 'Deschis', 'Titlu pe fundal deschis', 'Text în gri rece, titluri în navy.', border=True)}
       {combo(V['surface2'], V['primary'], V['primary'], V['primary'], V['text'], 'Card', 'Titlu pe card', 'Aceleași culori de text ca pe deschis.')}
       {combo(V['secondary'], V['accent'], V['accent'], V['surface'], V['border'], 'Închis', 'Titlu pe albastru închis', 'Eticheta în albastru brand, text în border.')}
-      {combo(V['blue_tint'], V['primary'], V['primary'], V['primary'], V['text'], 'Footer', 'Titlu pe albastru deschis', 'Fundalul footer-ului, text în gri rece.')}
-      {combo(V['primary'], V['accent'], V['accent'], V['surface'], V['border'], 'Navy', 'Titlu pe navy', 'Linkuri în border, hover în surface.')}
+      {combo(V['blue_tint'], V['primary'], V['primary'], V['primary'], V['text'], 'Accent deschis', 'Titlu pe albastru deschis', 'Tag-uri, fundal secundar, hover.')}
+      {combo(V['primary'], V['accent'], V['accent'], V['surface'], V['border'], 'Footer', 'Titlu pe navy', 'Fundalul footer-ului și al CTA-ului, linkuri în border.')}
     </div>
   </div>
 

@@ -27,17 +27,17 @@ def img(src, alt, extra=''):
 # ---------------- SECTIUNEA 2 ----------------
 DIFF=[
  ('<path d="M3 7l9-4 9 4-9 4-9-4z"></path><path d="M3 12l9 4 9-4"></path><path d="M3 17l9 4 9-4"></path>',
-  'Specializați în tubulatură ALP / P3ductal',
-  'Una dintre puținele echipe din România cu experiență consistentă pe panouri preizolate. Confecție în atelier sau pe șantier, îmbinări cu profile de aluminiu.'),
+  'Specialiști în ALP / P3ductal',
+  'Experiență consistentă pe panouri preizolate, confecție în atelier sau pe șantier, îmbinări cu profile de aluminiu.'),
  ('<path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle>',
-  'Singura echipă specializată din Moldova',
-  'Sediul în Neamț înseamnă mobilizare în aceeași zi în Iași, Bacău, Suceava, Roman și Piatra Neamț, fără costuri de deplasare din București.'),
+  'Echipă specializată în Moldova',
+  'Sediul în Neamț înseamnă mobilizare în aceeași zi în Iași, Bacău, Suceava, Roman și Piatra Neamț, fără costuri de deplasare.'),
  ('<circle cx="12" cy="12" r="9"></circle><path d="M8 12l3 3 5-6"></path>',
   'Execuție conform standardelor',
-  'Tubulatură realizată și montată conform EN 12237, EN 1507 și EN 12101-7 pentru desfumare, cu documentație de conformitate la predare.'),
+  'Tubulatură realizată și montată conform EN 12237, EN 1507 și EN 12101-7, cu documentație de conformitate la predare.'),
  ('<circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20a6.5 6.5 0 0 1 13 0"></path><path d="M16 4.5a3.5 3.5 0 0 1 0 7"></path><path d="M17.5 14a6.5 6.5 0 0 1 4 6"></path>',
   'Capacitate de subcontractare',
-  'Echipe de montaj disponibile pentru antreprenori generali, pe lucrări de la [X] ml în sus. Ofertă în 48 de ore de la primirea planului.'),
+  'Echipe de montaj pentru antreprenori generali, pe lucrări de la [X] ml în sus, cu ofertă în 48 de ore de la primirea planului.'),
 ]
 def about(desktop):
     pad='100px 20px' if desktop else '70px 10px'
@@ -86,7 +86,7 @@ def services(desktop):
     cards=''.join(f'''
       <div style="background: #ECE6DF; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; gap: 10px;">
         <div style="display: flex; flex-direction: column; gap: 10px;">
-          <div style="position: relative; min-height: {'300px' if desktop else '280px'}; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+          <div style="position: relative; min-height: {'210px' if desktop else '200px'}; overflow: hidden; display: flex; align-items: center; justify-content: center;">
             {img('serv-'+k+'.jpg','')}
             <div style="position: absolute; inset: 0; background: #241F21; opacity: 0.3;"></div>
             {ico(p, 72, '#F2EFE9', 1.1)}
@@ -361,21 +361,21 @@ def cta(desktop):
 def footer(desktop):
     pad='100px 30px 30px 30px' if desktop else '70px 10px 20px 10px'
     def col(title, links):
-        ls=''.join(f'<a href="{h}" style="color: #5E5A5C;">{t}</a>' for t,h in links)
-        return f'<div style="display: flex; flex-direction: column; gap: 20px;"><h3 style="color: #241F21; font-size: 17px; font-weight: 500; line-height: 1.3; letter-spacing: -0.6px; margin: 0;">{title}</h3><div style="display: flex; flex-direction: column; gap: 10px;">{ls}</div></div>'
+        ls=''.join(f'<a href="{h}" style="color: #D8D4CF;">{t}</a>' for t,h in links)
+        return f'<div style="display: flex; flex-direction: column; gap: 20px;"><h3 style="color: #F2EFE9; font-size: 17px; font-weight: 500; line-height: 1.3; letter-spacing: -0.6px; margin: 0;">{title}</h3><div style="display: flex; flex-direction: column; gap: 10px;">{ls}</div></div>'
     serv=[(t,u) for k,t,d,u,p in SERV]+[('Modificări instalații existente','/servicii/modificari-instalatii-ventilatie/'),('Igienizare și mentenanță','/servicii/igienizare-tubulatura/')]
     ind=[(t,u) for s,t,d,u in IND]
     zone=[(z,'/zone/') for z in ZONE[:8]]
-    social='<div style="display: flex; gap: 10px;">'+''.join(f'<a href="#" aria-label="{n}" style="width: 40px; height: 40px; border: 1px solid #241F21; border-radius: 500px; display: flex; align-items: center; justify-content: center; color: #241F21;">{ico(p,18,"#241F21",1.8)}</a>' for n,p in [('Facebook','<path d="M14 8h3V4h-3c-2.8 0-5 2.2-5 5v2H6v4h3v9h4v-9h3l1-4h-4V9c0-.6.4-1 1-1z"></path>'),('LinkedIn','<path d="M4 9h4v12H4z"></path><circle cx="6" cy="5" r="2"></circle><path d="M11 21v-7a3 3 0 0 1 6 0v7"></path><path d="M11 9h4"></path>'),('WhatsApp','<path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.6-4A8 8 0 1 1 20 11.5z"></path>')])+'</div>'
+    social='<div style="display: flex; gap: 10px;">'+''.join(f'<a href="#" aria-label="{n}" style="width: 40px; height: 40px; border: 1px solid rgba(242, 239, 233, 0.3); border-radius: 500px; display: flex; align-items: center; justify-content: center; color: #F2EFE9;">{ico(p,18,"#F2EFE9",1.8)}</a>' for n,p in [('Facebook','<path d="M14 8h3V4h-3c-2.8 0-5 2.2-5 5v2H6v4h3v9h4v-9h3l1-4h-4V9c0-.6.4-1 1-1z"></path>'),('LinkedIn','<path d="M4 9h4v12H4z"></path><circle cx="6" cy="5" r="2"></circle><path d="M11 21v-7a3 3 0 0 1 6 0v7"></path><path d="M11 9h4"></path>'),('WhatsApp','<path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.6-4A8 8 0 1 1 20 11.5z"></path>')])+'</div>'
     grid='grid-template-columns: 340px repeat(3, minmax(0, 1fr));' if desktop else 'grid-template-columns: repeat(1, minmax(0, 1fr));'
     return f'''
   <!-- FOOTER (layout footer din tema, pe fundal accent) -->
-  <footer style="background: #F6F36F; padding: {pad}; display: flex; flex-direction: column; gap: {'60px' if desktop else '40px'};">
+  <footer style="background: #241F21; padding: {pad}; display: flex; flex-direction: column; gap: {'60px' if desktop else '40px'};">
     <div style="display: grid; {grid} gap: {'40px' if desktop else '40px'};">
       <div style="display: flex; flex-direction: column; gap: 20px;">
-        <img src="logo-dark.png" alt="Aerconduct" style="width: {'200px' if desktop else '170px'}; height: auto; display: block;">
-        <p style="color: #241F21; max-width: 280px;">Execuție și montaj tubulatură de ventilație industrială și comercială. Echipă proprie, deplasare în toată țara.</p>
-        <div class="mono" style="color: #5E5A5C; display: flex; flex-direction: column; gap: 4px; text-transform: none;"><span>[Denumire firmă SRL]</span><span>CUI [__________] · Reg. Com. [__________]</span><span>Comuna Tămășeni, județul Neamț</span></div>
+        <img src="logo-white.png" alt="Aerconduct" style="width: {'200px' if desktop else '170px'}; height: auto; display: block;">
+        <p style="color: #D8D4CF; max-width: 280px;">Execuție și montaj tubulatură de ventilație industrială și comercială. Echipă proprie, deplasare în toată țara.</p>
+        <div class="mono" style="color: #D8D4CF; display: flex; flex-direction: column; gap: 4px; text-transform: none;"><span>[Denumire firmă SRL]</span><span>CUI [__________] · Reg. Com. [__________]</span><span>Comuna Tămășeni, județul Neamț</span></div>
       </div>
       {col('Servicii', serv)}
       <div style="display: flex; flex-direction: column; gap: 40px;">{col('Industrii', ind)}{col('Zone', zone)}</div>
@@ -385,9 +385,9 @@ def footer(desktop):
         {social}
       </div>
     </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; padding-top: 20px; border-top: 1px solid rgba(36, 31, 33, 0.19);">
-      <div class="mono" style="display: flex; gap: 20px; flex-wrap: wrap;"><a href="/termeni/" style="color: #241F21;">Termeni</a><a href="/confidentialitate/" style="color: #241F21;">Confidențialitate</a><a href="/cookies/" style="color: #241F21;">Cookies</a></div>
-      <span class="mono" style="color: #241F21;">© 2026 Aerconduct</span>
+    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; padding-top: 20px; border-top: 1px solid rgba(242, 239, 233, 0.125);">
+      <div class="mono" style="display: flex; gap: 20px; flex-wrap: wrap;"><a href="/termeni/" style="color: #F2EFE9;">Termeni</a><a href="/confidentialitate/" style="color: #F2EFE9;">Confidențialitate</a><a href="/cookies/" style="color: #F2EFE9;">Cookies</a></div>
+      <span class="mono" style="color: #F2EFE9;">© 2026 Aerconduct</span>
     </div>
   </footer>'''
 

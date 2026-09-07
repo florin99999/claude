@@ -32,7 +32,6 @@ def recolor(s):
     s = s.replace('style="background: %s; color: %s; padding: 14px 18px; border: 0; "><span>Trimite cererea de ofertă</span>' % (V2['primary'], V2['surface']),
                   'style="background: %s; color: %s; padding: 14px 18px; border: 0; "><span>Trimite cererea de ofertă</span>' % (V2['red'], V2['white']))
     # footer pe albastru deschis, mai putin dominant
-    s = s.replace('<footer style="background: %s;' % V2['accent'], '<footer style="background: %s;' % V2['blue_tint'])
     return s
 SRC = ['Main','HomeB','HomeC','Mobil','MobilB','MobilC','MobilD','MobilE']
 DST = ['V2Home','V2HomeB','V2HomeC','V2Mobil','V2MobilB','V2MobilC','V2MobilD','V2MobilE']

@@ -42,7 +42,7 @@ Toate planșele stau în același canvas, alături de design system. Pagina este
 | Zone deservite | Două coloane: text + hartă simplă SVG (secțiune fără echivalent în temă) |
 | FAQ | Acordeon cu linii de 1 px, prima întrebare deschisă |
 | CTA + formular | „Ready to get started” pe negru cald, cu formular pe card bej |
-| Footer | Footer pe fundal accent, 4 coloane, rând legal jos |
+| Footer | Footer-ul temei, pe fundal închis, 4 coloane, rând legal jos |
 
 `canvas/build_sections.py` generează secțiunile 2–10 și footer-ul din conținut, iar `canvas/build_pages.py` le împarte în planșe, pentru desktop și mobil. Valorile între paranteze drepte sunt de completat.
 
@@ -51,7 +51,7 @@ Toate planșele stau în același canvas, alături de design system. Pagina este
 Aceleași roluri de culoare ca în temă, construite în jurul roșului `#E02127` și albastrului `#3EA8DE` din logo:
 navy `#0C1A2B` (primary), albastru închis `#10334F` (secondary), gri rece `#5B6470` (text), albastru brand `#3EA8DE` (accent),
 alb rece `#F3F5F7`, carduri `#E8EDF1`, border `#CFD6DD`. Roșul apare doar pe butoanele de cerere de ofertă, albastrul preia rolul accentului (etichete pe închis, cifre, blocuri),
-iar footer-ul este pe albastru deschis `#D6ECF8`.
+iar footer-ul este pe navy `#0C1A2B`.
 
 - Token-uri: [`colors-v2.css`](colors-v2.css) (se încarcă după `airvora-tokens.css`).
 - Planșa „Design system v2 · Culori” și homepage-ul v2 (`canvas/V2*.dc.html`) sunt în același canvas. `canvas/build_v2.py` generează v2 din v1 prin înlocuirea culorilor.
